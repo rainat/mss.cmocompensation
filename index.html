@@ -14,6 +14,7 @@
         <!-- Font Icon http://fortawesome.github.io/Font-Awesome/ -->
         <link rel="stylesheet" href="assets/css/vendor/font-awesome.css">
         <link rel="stylesheet" href="assets/css/vendor/bootstrap/bootstrap.css">
+        <link rel="stylesheet" href="assets/css/vendor/bootstrap-select.css">
         <link rel="stylesheet" href="assets/css/main.css">
         <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -36,72 +37,330 @@
         <!-- //Responsive nav Space -->
         <div class="wrapper">
             <div class="wrapper-inner">
-                <header id="header">
+                <header id="header" class="bg-darken">
                     <div class="container">
-                        <nav class="nav">
-                            <ul>
-                                <li class="active"><a href="index.html">Products</a>
-                                    <ul>
-                                        <li><a href=""> Sales Skills Training</a> </li>
-                                        <li><a href="">GLeadership & Management Training</a> </li>
-                                        <li><a href="">Employment Law Compliance Training</a></li>
-                                        <li><a href="">Human Resources Training</a></li>
-                                        <li><a href=""> LMS Content Catalog</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="">Free Stuff</a>
-                                    <ul>
-                                        <li><a href="">Blogs</a> </li>
-                                        <li><a href="">Training eBooks</a> </li>
-                                        <li><a href="">Newsletters</a></li>
-                                        <li><a href="">Webinars</a></li>
-                                        <li><a href="">How-To Tutorials</a></li>
-                                        <li><a href=""> Sample Training Videos</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="">Clients</a></li>
-                                <li><a href="">The Science</a>
-                                    <ul>
-                                        <li><a href="">Rapid Learning</a> </li>
-                                        <li><a href="">Single-Concept Learning</a> </li>
-                                        <li><a href=""> Research-Based Learning</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="">Free Trial</a></li>
-                            </ul>
-                        </nav>
-                        <!-- //Navigation -->
-                        <a href="javascript:void(0)" class="btn-rwd-sidebar"><i class="fa fa-bars"></i></a>
+                        <div class="logo">
+                            <a href="#">
+                                <figure class="logo-thumb">
+                                    <img src="assets/img/logo_white.png" alt="">
+                                </figure>
+                            </a>
+                        </div>
+                        <!-- //logo -->
+                        <div class="head-right">
+                            <a href="#" class="btn-square trans">sign up</a>
+                            <a href="#" class="btn-square second">login</a>
+                        </div>
                     </div>
                 </header>
                 <!-- HEADER -->
-                <div id="main" role="main">
-                    <div class="container">
-                        <div class="checkbox">
-                            <input type="checkbox" value="" id="cxbox">
-                            <label for="cxbox"><span></span>Save this card</label>
-                        </div>
-                        <div class="radio-wrap">
-                            <div class="radio">
-                                <input type="radio" name="optionsRadios" id="radio" value="" checked>
-                                <label for="radio">
-                                    <span></span>
-                                    <p class="txt"><strong>New Customers</strong>Create an account with us for quick checkout, to keep track of your order, and more.</p>
-                                </label>
+                <div class="hero" style="background-image: url('assets/img/banner.jpg')">
+                    <div class="search-actionbar">
+                        <div class="container">
+                            <div class="desc">
+                                <p>Already Contributed? Then you can...</p>
                             </div>
-                            <div class="radio">
-                                <input type="radio" name="optionsRadios" id="radio2" value="option2">
-                                <label for="radio2">
-                                    <span></span>
-                                    <p class="txt"><strong>Returning Customers</strong></p>
-                                </label>
+                            <div class="btn-wrap">
+                                <a href="#" class="btn-square trans">search for jobs</a>
+                                <a href="#" class="btn-square trans"> search salaries</a>
                             </div>
                         </div>
-                        <!-- //radio-wrap -->
                     </div>
+                    <!-- //search-actionbar -->
+                    <div class="container">
+                        <div class="hero-desc">
+                            <h2><span class="primary-color">308</span> real salaries, <span class="primary-color">43</span> live jobs</h2>
+                            <div class="content-text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisihenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occae</p>
+                            </div>
+                        </div>
+                        <div class="mainsearch salinputwrap">
+                            <form action="/SalaryRecords/addSalaryRecord" class="form-horizontal" id="form_sample_1" method="post" accept-charset="utf-8" novalidate="novalidate">
+                                <div class="src-group">
+                                    <div class="wrap-validation">
+                                        <div class="check-val">
+                                            <div class="input select required">
+                                                <select name="data[SalaryRecord][profession_id]" required="required" class="form-control required selectpicker select1 selectpicker" onchange="getprofessionrole();" tabindex="1" id="SalaryRecordProfessionId">
+                                                    <option value="">Your specialist area</option>
+                                                    <option value="1">Option 1</option>
+                                                    <option value="2">Option 2</option>
+                                                    <option value="3">Option 3</option>
+                                                    <option value="5">Option 4</option>
+                                                    <option value="4">Option 5</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- //form-group -->
+                                <div class="src-group">
+                                    <div class="wrap-validation">
+                                        <div class="check-val">
+                                            <select id="SalaryRecordProfessionRoleId" class="form-control selectpicker select1" name="data[SalaryRecord][profession_role_id]">
+                                                <option value="">Your current role</option>
+                                                <option value="1">Option 1</option>
+                                                <option value="2">Option 2</option>
+                                                <option value="3">Option 3</option>
+                                                <option value="5">Option 4</option>
+                                                <option value="4">Option 5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- //form-group -->
+                                <div class="src-group">
+                                    <div class="wrap-validation">
+                                        <div class="check-val">
+                                            <input name="data[SalaryRecord][exact_job_title]" class="form-control" placeholder=" Your exact job title " required="required" tabindex="3" type="text" id="SalaryRecordExactJobTitle">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="src-group-btn">
+                                    <input type="submit" class="btn-square basedark" value="Next">
+                                </div>
+                            </form>
+                        </div>
+                        <!-- mainsearch -->
+                    </div>
+                </div>
+                <!-- //Hero -->
+                <div id="main" role="main">
+                    <div class="section-contribution">
+                        <article class="desc">
+                            <h2 class="title-md"><span class="main-color">a free</span> salary exchange website for your
+industry.</h2>
+                            <div class="content-text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisihenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occae</p>
+                                <a href="#" class="btn-transparent">contribute</a>
+                            </div>
+                        </article>
+                        <figure><img src="assets/img/box.png" alt=""></figure>
+                    </div>
+                    <section class="emreason">
+                        <div class="container">
+                            <h2 class="title-md">the <span>top 3 reasons</span> employees & companies use our salary survey</h2>
+                            <div class="row">
+                                <article class="emreason-box col-sm-4">
+                                    <a href="#">
+                                        <div class="inside">
+                                            <figure><img src="assets/img/icon1.png"></figure>
+                                            <h3>Salary Benchmarking.</h3>
+                                            <div class="content-text">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </article>
+                                <!-- //emreason-box -->
+                                <article class="emreason-box col-sm-4">
+                                    <a href="#">
+                                        <div class="inside">
+                                            <figure><img src="assets/img/icon2.png"></figure>
+                                            <h3>Pay Review Preperation.</h3>
+                                            <div class="content-text">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </article>
+                                <!-- //emreason-box -->
+                                <article class="emreason-box col-sm-4">
+                                    <a href="#">
+                                        <div class="inside">
+                                            <figure><img src="assets/img/icon3.png"></figure>
+                                            <h3>Salary Benchmarking.</h3>
+                                            <div class="content-text">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </article>
+                                <!-- //emreason-box -->
+                            </div>
+                        </div>
+                    </section>
+                    <!-- //emreason -->
+                    <div class="sshome-table">
+                        <div class="container">
+                            <h2 class="title-md">Last 5 Salary Contributions</h2>
+                            <div class="table-responsive">
+                                <table class="table tb-contrib">
+                                    <tr>
+                                        <th>salary</th>
+                                        <th>job title</th>
+                                        <th>location</th>
+                                        <th>Job type</th>
+                                        <th>date added</th>
+                                        <th style="width: 14%"></th>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="6" class="td-space"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="new">
+                                            <span class="tb-salary">£19,000</span>
+                                        </td>
+                                        <td>IT technician</td>
+                                        <td>London, UK</td>
+                                        <td>Temp</td>
+                                        <td>01-10-2015</td>
+                                        <td><a href="#" class="btn-tbDetail">view full details</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="6" class="td-space"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="">
+                                            <span class="tb-salary">£17,000</span>
+                                        </td>
+                                        <td>Security staff</td>
+                                        <td>London, UK</td>
+                                        <td></td>
+                                        <td>01-10-2015</td>
+                                        <td><a href="#" class="btn-tbDetail">view full details</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="6" class="td-space"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="">
+                                            <span class="tb-salary">£45,000</span>
+                                        </td>
+                                        <td>Sales person</td>
+                                        <td>London, UK</td>
+                                        <td></td>
+                                        <td>01-10-2015</td>
+                                        <td><a href="#" class="btn-tbDetail">view full details</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="6" class="td-space"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="">
+                                            <span class="tb-salary">£78,000</span>
+                                        </td>
+                                        <td>Regional manager</td>
+                                        <td>London, UK</td>
+                                        <td></td>
+                                        <td>01-10-2015</td>
+                                        <td><a href="#" class="btn-tbDetail">view full details</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="6" class="td-space"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="">
+                                            <span class="tb-salary">£79,000</span>
+                                        </td>
+                                        <td>Off-shore engineer</td>
+                                        <td>London, UK</td>
+                                        <td></td>
+                                        <td>01-10-2015</td>
+                                        <td><a href="#" class="btn-tbDetail">view full details</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="6" class="td-space"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <article class="sshome-table-desc">
+                                <h2 class="title-md">All salaries are posted anonymously.</h2>
+                                <div class="content-text">
+                                    <p>XYZ Salary Survey is the only live real-time salary survey for your industy providing accurate, global remuneration data to employees and companies 24/7/365.</p>
+                                </div>
+                            </article>
+                            <!-- //sshome-table-desc -->
+                        </div>
+                    </div>
+                    <!-- //sshome-table -->
+                    <div class="ss-join bg-darken">
+                        <div class="container">
+                            <header>
+                                <h2 class="title-md">Did you know?</h2>
+                                <div class="content-text">
+                                    <p>We can send you free salary alerts by email when new salaries are entered that match your profile. Join us today to take advantage.</p>
+                                </div>
+                            </header>
+                            <div class="form-join">
+                                <form>
+                                    <div class="form-group col-md-4">
+                                        <input type="text" class="form-control" placeholder="First Name">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <input type="text" class="form-control" placeholder="Last Name">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <input type="email" class="form-control" placeholder="Valid email address">
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div class="form-groupBtn">
+                                        <input type="submit" value="sign up" class="btn-square">
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- //form-join -->
+                        </div>
+                    </div>
+                    <!-- //ss-join -->
                 </div>
                 <!-- //MAIN -->
                 <footer id="footer">
+                    <div class="footMenu">
+                        <div class="container">
+                            <div class="footMenu-item footercookie col-md-3">
+                                <h3 class="title-foot">employees</h3>
+                                <ul>
+                                    <li><a href="#">Add your Salary</a></li>
+                                    <li><a href="#">Search Salaries</a></li>
+                                    <li><a href="#">Search Jobs</a></li>
+                                    <li><a href="#">A-Z of Employers</a></li>
+                                    <li><a href="#"> FAQs</a></li>
+                                </ul>
+                            </div>
+                            <div class="footMenu-item footercookie col-md-3">
+                                <h3 class="title-foot">companies</h3>
+                                <ul>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Branding Opportunities</a></li>
+                                    <li><a href="#">Post Jobs</a></li>
+                                    <li><a href="#">Request a Report</a></li>
+                                    <li><a href="#"> FAQs</a></li>
+                                </ul>
+                            </div>
+                            <div class="footMenu-item footercookie col-md-3">
+                                <h3 class="title-foot">legal</h3>
+                                <ul>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Terms of Use</a></li>
+                                    <li><a href="#">Cookie Policy</a></li>
+                                    <li><a href="#">Site Map</a></li>
+                                </ul>
+                            </div>
+                            <div class="ss-social">
+                                <div class="container">
+                                    <a href="#" class="fb"><i class="fa fa-facebook"></i></a>
+                                    <a href="#" class="tw"><i class="fa fa-twitter"></i></a>
+                                    <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                                    <a href="#" class="google"><i class="fa fa-google"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //footMenu -->
+                    <div class="footcontact bg-secondry">
+                        <div class="container">
+                            <p class="phone"><i class="fa fa-phone"></i>telephone today free on 0800 123 456</p>
+                            <p class="email"><i class="fa fa-envelope-o"></i>info@yourcompany.com</p>
+                        </div>
+                    </div>
+                    <!-- //footcontact -->
+                    <div class="container">
+                        <div class="copyright">
+                            <div class="copyItem">&copy;Your company Salary Survey. All rights reserved.</div>
+                            <div class="copyItem">Salary Survey Software by <a href='#' target='_blank'> MySalarySurvey.com</a></div>
+                        </div>
+                        <!-- //copyright -->
+                    </div>
                 </footer>
                 <!-- //FOOTER -->
                 <!-- 
@@ -112,6 +371,7 @@
         <!-- / .wrapper -->
         <script src="assets/js/libs.js"></script>
         <script src="assets/js/vendor.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
         <script src="assets/js/global.js"></script>
         <script src="//localhost:35729/livereload.js"></script>
     </body>

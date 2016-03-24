@@ -1,64 +1,175 @@
-/** TABS
+/** HERO
 ===================================*/
-#tabs_wrapper {
-	width: 422px;
-}
-#tabs_container {
-	border-bottom: 1px solid #ccc;
-}
-#tabs {
-	list-style: none;
-	padding: 5px 0 4px 0;
-	margin: 0 0 0 10px;
-	font: 0.75em arial;
-}
-#tabs li {
-	display: inline;
-}
-#tabs li a {
-	border: 1px solid #ccc;
-	padding: 4px 6px;
-	text-decoration: none;
-	background-color: #eeeeee;
-	border-bottom: none;
-	outline: none;
-	border-radius: 5px 5px 0 0;
-	-moz-border-radius: 5px 5px 0 0;
-	-webkit-border-top-left-radius: 5px;
-	-webkit-border-top-right-radius: 5px;
-}
-#tabs li a:hover {
-	background-color: #dddddd;
-	padding: 4px 6px;
-}
-#tabs li.active a {
-	border-bottom: 1px solid #fff;
-	background-color: #fff;
-	padding: 4px 6px 5px 6px;
-	border-bottom: none;
-}
-#tabs li.active a:hover {
-	background-color: #eeeeee;
-	padding: 4px 6px 5px 6px;
-	border-bottom: none;
-}
-
-#tabs li a.icon_accept {
-	background-image: url(accept.png);
-	background-position: 5px;
+.hero{
+	@include clearfix();
+	color: white;
+	padding: 0 0 8%;
+	position: relative;
 	background-repeat: no-repeat;
-	padding-left: 24px;
-}
-#tabs li a.icon_accept:hover {
-	padding-left: 24px;
+	background-position: center;
+	@include background-size(cover);
+	background-color: $fourth-color;
+	background-attachment: fixed;
+	.hero-thumb{
+		text-align: center;
+		max-width: 530px;
+		margin: 0 auto 35px;
+		@media screen and (min-width: 62em){
+			float: right;
+			text-align: right;
+			margin: 0;
+		}
+	}
+	@media screen and (min-width: 48em){
+		padding: 8% 0 8%;
+	}
 }
 
-#tabs_content_container {
-	border: 1px solid #ccc;
-	border-top: none;
-	padding: 10px;
-	width: 400px;
+.search-actionbar{
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	width: 100%;
+	background: rgba($second-color, 0.7);
+	border-bottom: 1px solid $second-color;
+	padding: 20px 0;
+	color: white;
+	text-align: center;
+	.desc{
+		font-size: 18px;
+		margin-bottom: 15px;
+		text-transform: uppercase;
+
+	}
+	.btn-wrap{
+		text-align: center;
+		.btn-square:last-child{
+			margin-left: 15px;
+		}
+	}
+	@media screen and (min-width: 48em){
+		text-align: left;
+		position: absolute;
+		.desc{
+			float: left;
+			padding-top: 15px;
+			margin-bottom: 0;
+		}
+		.btn-wrap{
+			float: right;
+			text-align: right;
+		}
+	}
 }
-.tab_content {
-	display: none;
+
+.hero-desc{
+	text-align: center;
+	padding-top: 12% 0 0;
+	margin-bottom: 50px;
+	@media screen and (min-width: 48em){
+		padding-top: 10%;
+	}
+	h2{
+		font-weight: 600px;
+		font-size: 42px;
+		margin: 0;
+		margin-bottom: 35px;
+		line-height: 1em;
+		text-transform: uppercase;
+		@media screen and (min-width: 48em){
+			font-size: 58px;
+		}
+	}
+	.content-text{
+		
+	}
 }
+
+
+/** MAIN SEARCH
+===================================*/
+.mainsearch{
+	@include clearfix();
+	margin-bottom: 0;
+	text-align: center;
+
+	&.salinputwrap{
+		padding: 15px 0;
+
+	}
+	.container{
+		position: relative;
+	}
+	.form-group{
+		margin: 0 15px;
+		padding: 0;
+	}
+	.iteminputsal{
+		float: none;
+		width: 100%;
+	}
+	.btn-square{
+
+	}
+
+	.form-control{
+		height: 48px;
+		background-color: white;
+	}
+	.iteminputsal .form-control {
+		height: 48px;
+		background-color: white;
+	}
+
+	.bootstrap-select > .btn {
+	    width: 100%;
+	    padding-right: 25px;
+	    height: 48px;
+	    -moz-border-radius: 0;
+	    -webkit-border-radius: 0;
+	    border-radius: 0;
+	    background-color: white;
+	}
+
+	.caret{
+		border-top-color: #0088cc;
+	}
+	.btn-group.bootstrap-select{
+		height: auto;
+		@include clearfix();
+	}
+
+	.btn-square{
+		padding-top: 16px;
+		padding-bottom: 16px;
+	}
+}
+.src-group{
+	margin-bottom: 7px;
+	@media screen and (min-width: 62em){
+		width: 29.8%;
+		@include inline-block();
+		margin-bottom: 0;
+		padding: 0 15px;
+	}
+	@media screen and (min-width: 62em) and (max-width: 75em){
+		width: 28%;
+	}
+	&:first-child{
+		padding-left: 0;
+	}
+	&:last-child{
+		padding-right: 0;
+	}
+}
+.src-group-btn{
+	text-align: center;
+	margin-bottom: 7px;
+	@media screen and (min-width: 62em){
+		@include inline-block();
+		vertical-align: top;
+		margin-bottom: 0;
+		text-align: right;	
+	}
+}
+

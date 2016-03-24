@@ -43,5 +43,6 @@ function initializeScript(){
 -------------------------------------------------------------- */
 jQuery(document).ready(function(){
     initializeScript();
+    jQuery('.selectpicker').selectpicker({});
 });
 /* END ------------------------------------------------------- */

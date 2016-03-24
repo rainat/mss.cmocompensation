@@ -1,7 +1,7 @@
 body{
 	background: $body-bg;
 	font: $font-size $primary-font;
-	line-height: 1.3em;
+	line-height: 1.5em;
 	color: $text-color;
 	font-weight: normal;
 	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
@@ -15,7 +15,8 @@ ul, li{
 }
 #{headings()}{
 	font-weight:normal;
-	line-height:1.3em;		
+	line-height:1.3em;	
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 *:focus, *:active{
@@ -79,6 +80,16 @@ img {
 	}
 }
 
+#main{padding-bottom: 0;}
+
+/** CONTAINER
+===================================*/
+@media (min-width: 1200px) {
+	.container{
+		  width: 960px;
+	}
+}
+
 /** SPACE
 ===================================*/
 $spacer:
@@ -93,4 +104,88 @@ $spacer:
 		display: block;
 		width: 100%;
 	}
+}
+
+/** BUTTONS & LINKS
+===================================*/
+.btn-square{
+	background: none;
+	border: none;
+	padding: 0;
+	margin: 0;
+	@include inline-block();
+	color: white;
+	background-color: $primary-color;
+	text-align: center;
+	font-weight: $font-smbold;
+	text-transform: uppercase;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 13px;
+	line-height: 1.3em;
+	padding: 15px 30px;
+	@include border-radius(3px);
+
+
+	&.trans{
+		background-color: transparent;
+		-moz-box-shadow:    inset 0 0 1px 1px white;
+		-webkit-box-shadow: inset 0 0 1px 1px white;
+		box-shadow:         inset 0 0 1px 1px white;
+	}
+	&.second{
+		background-color: $second-color;
+	}
+	&:hover, &:focus, &:active{
+		@include opacity(0.7);
+		color: white;
+		text-decoration: none;
+	}
+}
+
+
+/** FORM
+===================================*/
+.form-control{
+	@include border-radius(0);
+	background-color: white;
+}
+*:focus{
+	outline: none;
+}
+
+/** TABLE
+===================================*/
+.table-responsive{
+	@media screen and (max-width: 767px) {
+		overflow-y: hidden;
+		overflow-x: scroll !important;
+		-ms-overflow-style: -ms-autohiding-scrollbar;
+		-webkit-overflow-scrolling: touch;
+	}
+	
+}
+
+/** BASE COLOR
+===================================*/
+.primary-color {color: $primary-color;}
+.second-color {color: $second-color;}
+.third-color {color: $third-color;}
+.fourth-color {color: $fourth-color;}
+
+/** BACKGROUND-COLOR
+===================================*/
+.bg-primary-color{
+	background-color: $primary-color;
+	color: white;
+}
+.bg-second-color{
+	background-color: $second-color;
+	color: white;
+}
+.bg-third-color{
+	background-color: $third-color;
+	color: white;
+}
+.bg-fourth-color{
+	background-color: $fourth-color;
 }
