@@ -830,10 +830,10 @@ input[type="radio"]:checked + label span {
     border: none !important; }
     .table.tb-contrib td.td-space-head:first-child {
       background-color: transparent; }
-@medis screen and (min-width: 48em) {
-  .table.tb-contrib td.td-space-head {
-    background-color: transparent;
-    padding: 30px 6px; } }
+    @media screen and (min-width: 48em) {
+      .table.tb-contrib td.td-space-head {
+        background-color: transparent;
+        padding: 30px 6px; } }
   .table.tb-contrib td.td-space {
     background-color: transparent;
     padding: 6px;
