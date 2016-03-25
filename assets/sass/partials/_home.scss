@@ -5,6 +5,7 @@
 	color: white;
 	padding: 0 0 8%;
 	position: relative;
+	z-index: 10;
 	background-repeat: no-repeat;
 	background-position: center;
 	@include background-size(cover);
@@ -21,7 +22,7 @@
 		}
 	}
 	@media screen and (min-width: 48em){
-		padding: 8% 0 8%;
+		padding: 8% 0 4%;
 	}
 }
 
@@ -93,6 +94,13 @@
 	margin-bottom: 0;
 	text-align: center;
 
+
+	.form-box{
+		background: rgba(229,26,46,0.6);
+		padding: 15px 20px;
+    margin-bottom: 20px;
+	}
+
 	&.salinputwrap{
 		padding: 15px 0;
 
@@ -147,10 +155,10 @@
 .src-group{
 	margin-bottom: 7px;
 	@media screen and (min-width: 62em){
-		width: 29.8%;
+		width: 33%;
 		@include inline-block();
 		margin-bottom: 0;
-		padding: 0 15px;
+		padding: 0 8px;
 	}
 	@media screen and (min-width: 62em) and (max-width: 75em){
 		width: 28%;
@@ -166,10 +174,222 @@
 	text-align: center;
 	margin-bottom: 7px;
 	@media screen and (min-width: 62em){
-		@include inline-block();
-		vertical-align: top;
 		margin-bottom: 0;
 		text-align: right;	
+	}
+}
+
+
+/** CONTRIBUTION
+===================================*/
+.section-contribution{
+	background-color: $second-color;
+	color: white;
+	@include clearfix();
+	position: relative;
+	z-index: 11;
+	padding-bottom: 10px;
+
+	.desc{
+		overflow: hidden;
+		padding: 35px 0;
+
+		.btn-square{
+			margin-top: 20px;
+		}
+	}
+
+	figure{
+		max-width: 400px;
+		margin-top: -25px;
+		@media screen and (min-width: 38em){
+			float: right;
+			margin-left: 15px;
+		}
+	}
+}
+
+
+/** EMPLOYEE REASON
+===================================*/
+.emreason{
+	padding: 50px 0;
+	background-color: $primary-color;
+	.title-md{
+		text-align: center;
+		margin-bottom: 48px;
+		color : white;	
+	}
+}
+
+.emreason-box{
+	position: relative;
+	z-index: 10;
+	margin-bottom: 30px;
+	color: white;
+	text-align: center;
+	padding: 15px 5px;
+	@include border-radius(5px);
+	@include prefixed(transition, all .3s linear);
+
+	&:hover{
+		background-color: darken($primary-color, 5%);
+	}
+	@media screen and (min-width: 48em){
+		margin-bottom: 0;
+	}
+	a{
+		color: white;
+		&:hover{
+		 text-decoration: none;		
+	 }
+	}
+	.inside{
+		padding: 10px;
+	}
+	figure{
+		max-width: 145px;
+		overflow: hidden;
+		margin: 0 auto 25px;
+		@include border-radius(100%);
+		border: 7px solid white;
+		text-align: center;
+		padding: 30px;
+	}
+
+	h3{
+		font-size: 19px;
+		margin: 0;
+		margin-bottom: 25px;
+		text-align: center;
+	}
+
+	.content-text{
+		font-size: 0.9em;
+	}
+}
+
+/**  HOME TABLE
+===================================*/
+.sshome-table{
+	padding-bottom: 50px;
+	position: relative;
+	z-index: 12;
+	@media screen and (min-width: 62em){
+		padding-bottom: 70px;
+	}
+	.table.tabelhome{
+		width: 100%;
+	}
+
+	header{
+		background-color: $second-color;
+		color: white;
+		padding: 20px 0;
+		margin-bottom: 13px;	
+		.title-md{
+			color: white;
+			margin-bottom: 0;
+		}
+	}
+}
+
+.table{
+	&.tb-contrib{
+		&:before{
+			content: '';
+			position: absolute;
+			z-index: -1;
+			left: 0;
+			top: 0;
+			@include size(100%, 130px);
+			background-color: $fourth-color;
+
+		}
+		th{
+			background-color: $fourth-color;
+			border: none;
+			text-transform: uppercase;
+			padding: 8px 15px;
+			font-size: 0.8em;
+			border-left: 1px solid $text-color;
+
+			&:first-child, &:last-child {
+				border-left: none;
+			}
+		}
+
+		td{
+			background-color: white;
+			border: none;
+			padding: 8px 10px;
+			color: $text-color;
+			font-size: 0.9em;
+			border: 1px solid #e0e1e1;
+			position: relative;
+			vertical-align: middle;
+			font-weight: $font_smbold;
+			&.td-space-head{
+				background-color: transparent;
+				padding: 30px 6px;
+				border: none !important;
+				&:first-child{
+					background-color: transparent;
+				}
+			}
+			&.td-space{
+				background-color: transparent;
+				padding: 6px;
+				border: none !important;
+				&:first-child{
+					background-color: transparent;
+				}
+			}
+
+			&:first-child{
+				color: $primary-color;
+			}
+			&:last-child{
+				border-left: none;
+				padding-right: 8px;
+			}
+
+			&.new{
+				background-image: image-url('ribbon_new.png');
+				background-repeat: no-repeat;
+				background-position: left top;
+				background-size: 42px auto;
+			}
+
+			.tb-salary{
+				display: block;
+				text-align: center;
+				font-weight: $font-exbold;
+				font-size: 20px;
+			}
+
+			&.action{
+				background-color: $primary-color;
+				color: white;
+			}
+
+			.btn-tbDetail{
+				background-color: $primary-color;
+				color: white;
+				font-size: 0.8em;
+				display: block;
+				color: white;
+				text-align: center;
+				font-weight: $font-bold;
+				text-transform: uppercase;
+				padding: 15px 10px;
+
+				&:hover{
+					text-decoration: none;	
+					background-color: darken($primary-color, 8%);
+				}
+			}
+		}
 	}
 }
 

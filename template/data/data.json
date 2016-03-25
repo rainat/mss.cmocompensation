@@ -3,7 +3,7 @@
 			"checkout-b", "checkout", "checkout-c-1", "checkout-c-3", "checkout-e-1", "checkout-e-2"
 	], 
 	"whyus" :{
- 		"title" : "the <span>top 3 reasons</span> employees & companies use our salary survey",
+ 		"title" : "the <strong>top 3 reasons</strong> employees & companies use our salary survey",
  		"item" :[
  			{
  				"thumb" : "icon1.png",
@@ -23,7 +23,7 @@
  		]
  	},
  	"salaryTable" :{
- 		"title" : "Last 5 Salary Contributions",
+ 		"title" : "Last <strong>5</strong> Salary Contributions",
  		"list" : [
  			{
  				"new" : true,

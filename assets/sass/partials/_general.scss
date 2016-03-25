@@ -106,6 +106,17 @@ $spacer:
 	}
 }
 
+/** TITLE  & TEXT
+===================================*/
+.title-md{
+	margin: 0;
+	margin-bottom: 18px;
+	font: 24px 'Source Sans Pro', sans-serif;
+	line-height: 1.2em;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
 /** BUTTONS & LINKS
 ===================================*/
 .btn-square{
@@ -124,6 +135,7 @@ $spacer:
 	line-height: 1.3em;
 	padding: 15px 30px;
 	@include border-radius(3px);
+	@include prefixed(transition, all 0.3s ease);
 
 
 	&.trans{

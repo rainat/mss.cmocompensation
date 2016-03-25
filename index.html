@@ -76,12 +76,29 @@
                         </div>
                         <div class="mainsearch salinputwrap">
                             <form action="/SalaryRecords/addSalaryRecord" class="form-horizontal" id="form_sample_1" method="post" accept-charset="utf-8" novalidate="novalidate">
-                                <div class="src-group">
-                                    <div class="wrap-validation">
-                                        <div class="check-val">
-                                            <div class="input select required">
-                                                <select name="data[SalaryRecord][profession_id]" required="required" class="form-control required selectpicker select1 selectpicker" onchange="getprofessionrole();" tabindex="1" id="SalaryRecordProfessionId">
-                                                    <option value="">Your specialist area</option>
+                                <div class="form-box">
+                                    <div class="src-group">
+                                        <div class="wrap-validation">
+                                            <div class="check-val">
+                                                <div class="input select required">
+                                                    <select name="data[SalaryRecord][profession_id]" required="required" class="form-control required selectpicker select1 selectpicker" onchange="getprofessionrole();" tabindex="1" id="SalaryRecordProfessionId">
+                                                        <option value="">Your specialist area</option>
+                                                        <option value="1">Option 1</option>
+                                                        <option value="2">Option 2</option>
+                                                        <option value="3">Option 3</option>
+                                                        <option value="5">Option 4</option>
+                                                        <option value="4">Option 5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- //form-group -->
+                                    <div class="src-group">
+                                        <div class="wrap-validation">
+                                            <div class="check-val">
+                                                <select id="SalaryRecordProfessionRoleId" class="form-control selectpicker select1" name="data[SalaryRecord][profession_role_id]">
+                                                    <option value="">Your current role</option>
                                                     <option value="1">Option 1</option>
                                                     <option value="2">Option 2</option>
                                                     <option value="3">Option 3</option>
@@ -91,32 +108,18 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <!-- //form-group -->
-                                <div class="src-group">
-                                    <div class="wrap-validation">
-                                        <div class="check-val">
-                                            <select id="SalaryRecordProfessionRoleId" class="form-control selectpicker select1" name="data[SalaryRecord][profession_role_id]">
-                                                <option value="">Your current role</option>
-                                                <option value="1">Option 1</option>
-                                                <option value="2">Option 2</option>
-                                                <option value="3">Option 3</option>
-                                                <option value="5">Option 4</option>
-                                                <option value="4">Option 5</option>
-                                            </select>
+                                    <!-- //form-group -->
+                                    <div class="src-group">
+                                        <div class="wrap-validation">
+                                            <div class="check-val">
+                                                <input name="data[SalaryRecord][exact_job_title]" class="form-control" placeholder=" Your exact job title " required="required" tabindex="3" type="text" id="SalaryRecordExactJobTitle">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- //form-group -->
-                                <div class="src-group">
-                                    <div class="wrap-validation">
-                                        <div class="check-val">
-                                            <input name="data[SalaryRecord][exact_job_title]" class="form-control" placeholder=" Your exact job title " required="required" tabindex="3" type="text" id="SalaryRecordExactJobTitle">
-                                        </div>
-                                    </div>
-                                </div>
+                                <!-- /form-box -->
                                 <div class="src-group-btn">
-                                    <input type="submit" class="btn-square basedark" value="Next">
+                                    <input type="submit" class="btn-square trans" value="Next">
                                 </div>
                             </form>
                         </div>
@@ -126,52 +129,52 @@
                 <!-- //Hero -->
                 <div id="main" role="main">
                     <div class="section-contribution">
-                        <article class="desc">
-                            <h2 class="title-md"><span class="main-color">a free</span> salary exchange website for your
-industry.</h2>
-                            <div class="content-text">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisihenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occae</p>
-                                <a href="#" class="btn-transparent">contribute</a>
-                            </div>
-                        </article>
-                        <figure><img src="assets/img/box.png" alt=""></figure>
+                        <div class="container">
+                            <figure><img src="assets/img/box.png" alt=""></figure>
+                            <article class="desc">
+                                <h2 class="title-md">
+                    <strong class="primary-color">a free</strong> salary exchange website for your industry.
+                </h2>
+                                <div class="content-text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisihenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occae</p>
+                                    <div class="text-right">
+                                        <a href="#" class="btn-square trans">contribute</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
                     </div>
+                    <!-- //section-contribution -->
                     <section class="emreason">
                         <div class="container">
-                            <h2 class="title-md">the <span>top 3 reasons</span> employees & companies use our salary survey</h2>
+                            <h2 class="title-md">the <strong>top 3 reasons</strong> employees & companies use our salary survey</h2>
                             <div class="row">
                                 <article class="emreason-box col-sm-4">
                                     <a href="#">
-                                        <div class="inside">
-                                            <figure><img src="assets/img/icon1.png"></figure>
-                                            <h3>Salary Benchmarking.</h3>
-                                            <div class="content-text">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                                            </div>
+                                        <figure><img src="assets/img/icon1.png"></figure>
+                                        <h3>Salary Benchmarking.</h3>
+                                        <div class="content-text">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
                                         </div>
                                     </a>
                                 </article>
                                 <!-- //emreason-box -->
                                 <article class="emreason-box col-sm-4">
                                     <a href="#">
-                                        <div class="inside">
-                                            <figure><img src="assets/img/icon2.png"></figure>
-                                            <h3>Pay Review Preperation.</h3>
-                                            <div class="content-text">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
-                                            </div>
+                                        <figure><img src="assets/img/icon2.png"></figure>
+                                        <h3>Pay Review Preperation.</h3>
+                                        <div class="content-text">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
                                         </div>
                                     </a>
                                 </article>
                                 <!-- //emreason-box -->
                                 <article class="emreason-box col-sm-4">
                                     <a href="#">
-                                        <div class="inside">
-                                            <figure><img src="assets/img/icon3.png"></figure>
-                                            <h3>Salary Benchmarking.</h3>
-                                            <div class="content-text">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                                            </div>
+                                        <figure><img src="assets/img/icon3.png"></figure>
+                                        <h3>Salary Benchmarking.</h3>
+                                        <div class="content-text">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
                                         </div>
                                     </a>
                                 </article>
@@ -181,8 +184,12 @@ industry.</h2>
                     </section>
                     <!-- //emreason -->
                     <div class="sshome-table">
+                        <header>
+                            <div class="container">
+                                <h2 class="title-md">Last <strong>5</strong> Salary Contributions</h2>
+                            </div>
+                        </header>
                         <div class="container">
-                            <h2 class="title-md">Last 5 Salary Contributions</h2>
                             <div class="table-responsive">
                                 <table class="table tb-contrib">
                                     <tr>
@@ -194,7 +201,7 @@ industry.</h2>
                                         <th style="width: 14%"></th>
                                     </tr>
                                     <tr>
-                                        <td colspan="6" class="td-space"></td>
+                                        <td colspan="6" class="td-space-head"></td>
                                     </tr>
                                     <tr>
                                         <td class="new">
@@ -204,7 +211,7 @@ industry.</h2>
                                         <td>London, UK</td>
                                         <td>Temp</td>
                                         <td>01-10-2015</td>
-                                        <td><a href="#" class="btn-tbDetail">view full details</a></td>
+                                        <td class="action" width="17%"><a href="#" class="btn-tbDetail">view full details</a></td>
                                     </tr>
                                     <tr>
                                         <td colspan="6" class="td-space"></td>
@@ -217,7 +224,7 @@ industry.</h2>
                                         <td>London, UK</td>
                                         <td></td>
                                         <td>01-10-2015</td>
-                                        <td><a href="#" class="btn-tbDetail">view full details</a></td>
+                                        <td class="action" width="17%"><a href="#" class="btn-tbDetail">view full details</a></td>
                                     </tr>
                                     <tr>
                                         <td colspan="6" class="td-space"></td>
@@ -230,7 +237,7 @@ industry.</h2>
                                         <td>London, UK</td>
                                         <td></td>
                                         <td>01-10-2015</td>
-                                        <td><a href="#" class="btn-tbDetail">view full details</a></td>
+                                        <td class="action" width="17%"><a href="#" class="btn-tbDetail">view full details</a></td>
                                     </tr>
                                     <tr>
                                         <td colspan="6" class="td-space"></td>
@@ -243,7 +250,7 @@ industry.</h2>
                                         <td>London, UK</td>
                                         <td></td>
                                         <td>01-10-2015</td>
-                                        <td><a href="#" class="btn-tbDetail">view full details</a></td>
+                                        <td class="action" width="17%"><a href="#" class="btn-tbDetail">view full details</a></td>
                                     </tr>
                                     <tr>
                                         <td colspan="6" class="td-space"></td>
@@ -256,7 +263,7 @@ industry.</h2>
                                         <td>London, UK</td>
                                         <td></td>
                                         <td>01-10-2015</td>
-                                        <td><a href="#" class="btn-tbDetail">view full details</a></td>
+                                        <td class="action" width="17%"><a href="#" class="btn-tbDetail">view full details</a></td>
                                     </tr>
                                     <tr>
                                         <td colspan="6" class="td-space"></td>
