@@ -44,9 +44,18 @@
 	}
 	.btn-wrap{
 		text-align: center;
-		.btn-square:last-child{
-			margin-left: 15px;
+		.btn-square{
+			margin-bottom: 15px;
 		}
+		@media screen and (min-width: 38em){
+			.btn-square{
+				margin-bottom: 0;
+			}
+			.btn-square:last-child{
+				margin-left: 15px;
+			}
+		}
+		
 	}
 	@media screen and (min-width: 48em){
 		text-align: left;
@@ -65,7 +74,7 @@
 
 .hero-desc{
 	text-align: center;
-	padding-top: 12% 0 0;
+	padding: 12% 0 0;
 	margin-bottom: 50px;
 	@media screen and (min-width: 48em){
 		padding-top: 10%;
@@ -201,10 +210,13 @@
 
 	figure{
 		max-width: 400px;
+		margin: 0 auto;
+		text-align: center;
 		margin-top: -25px;
-		@media screen and (min-width: 38em){
+		@media screen and (min-width: 48em){
 			float: right;
 			margin-left: 15px;
+			text-align: right;
 		}
 	}
 }
@@ -275,6 +287,7 @@
 	padding-bottom: 50px;
 	position: relative;
 	z-index: 12;
+	background-color: #fafafa;
 	@media screen and (min-width: 62em){
 		padding-bottom: 70px;
 	}
@@ -292,11 +305,16 @@
 			margin-bottom: 0;
 		}
 	}
+
+	.table-responsive{
+		border : none ;
+	}
 }
 
 .table{
 	&.tb-contrib{
 		&:before{
+			display: none;
 			content: '';
 			position: absolute;
 			z-index: -1;
@@ -304,6 +322,9 @@
 			top: 0;
 			@include size(100%, 130px);
 			background-color: $fourth-color;
+			@media screen and (min-width: 48em){
+				display: block;	
+			}
 
 		}
 		th{
@@ -329,13 +350,16 @@
 			position: relative;
 			vertical-align: middle;
 			font-weight: $font_smbold;
+			
 			&.td-space-head{
-				background-color: transparent;
-				padding: 30px 6px;
 				border: none !important;
 				&:first-child{
 					background-color: transparent;
 				}
+				@medis screen and (min-width: 48em){
+					background-color: transparent;
+					padding: 30px 6px;
+				}	
 			}
 			&.td-space{
 				background-color: transparent;
@@ -390,6 +414,46 @@
 				}
 			}
 		}
+	}
+}
+
+.sshome-table-desc{
+	text-align: center;
+	padding-top: 30px;
+	color: #a6a6a6;
+	.title-md{
+		color: $second-color;
+	}
+}
+
+
+/** JOIN US
+===================================*/
+.ss-join{
+	padding: 50px 0;
+	background-color: $second-color;
+	color: #a6a6a6;
+	.title-md{
+		color:  white;
+	}
+	.container{
+		position: relative;
+	}
+	header{
+		margin-bottom: 30px;
+		text-align: center;
+		.title-md{
+			margin-bottom: 25px;
+		}
+	}
+
+	.form-groupBtn{
+		text-align: center;
+		margin-top: 20px;
+	}
+
+	.form-control{
+		height: 43px;
 	}
 }
 

@@ -1,8 +1,9 @@
 <footer id="footer">
 	<div class="footMenu">
 		<div class="container">
+			<div class="row">
 			{{~#footmenu}}
-				<div class="footMenu-item footercookie col-md-3">
+				<div class="footMenu-item col-md-4">
 					<h3 class="title-foot">{{title}}</h3>
 					<ul>
 						{{#list}}
@@ -12,21 +13,20 @@
 				</div>
 			{{~/footmenu}}
 			<div class="ss-social">
-			    <div class="container">
-			        <a href="#" class="fb"><i class="fa fa-facebook"></i></a>
-			        <a href="#" class="tw"><i class="fa fa-twitter"></i></a>
-			        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-			        <a href="#" class="google"><i class="fa fa-google"></i></a>
-			    </div>
+		        <a href="#" class="fb"><i class="fa fa-facebook"></i></a>
+		        <a href="#" class="tw"><i class="fa fa-twitter"></i></a>
+		        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+		        <a href="#" class="google"><i class="fa fa-google"></i></a>
+			</div>
 			</div>
 		</div>
 	</div><!-- //footMenu -->
 
 	{{#footer}}
-	<div class="footcontact bg-secondry">
+	<div class="footcontact">
 		<div class="container">
-			<p class="phone"><i class="fa fa-phone"></i>{{phone}}</p>
-			<p class="email"><i class="fa fa-envelope-o"></i>info@yourcompany.com</p>	
+			<p class="phone">{{phone}}</p>
+			<p class="email"><a href="#">info@yourcompany.com</a></p>	
 		</div>
 	</div><!-- //footcontact -->
 
