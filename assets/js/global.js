@@ -37,6 +37,9 @@ function initializeScript(){
 		jQuery(selected_tab).fadeIn();
 		return false;
 	});
+
+	//CHECKBOX
+	jQuery('input[type=checkbox].cxbox, input[type=radio].radio').customRadioCheck();
 }
 
 /* =Document Ready Trigger

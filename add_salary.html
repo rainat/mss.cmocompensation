@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+    <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <!-- Font Icon http://fortawesome.github.io/Font-Awesome/ -->
+        <link rel="stylesheet" href="assets/css/vendor/font-awesome.css">
+        <link rel="stylesheet" href="assets/css/vendor/bootstrap/bootstrap.css">
+        <link rel="stylesheet" href="assets/css/vendor/bootstrap-select.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+        <!--[if lt IE 8]>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+  <![endif]-->
+        <script src="assets/js/modernizr.min.js"></script>
+    </head>
+    <body>
+        <div id="nav-rwd-left" class="nav-rwd-sidebar">
+            <div class="close-sidebar">
+                <a href="javascript:void(0);" class="btn-hide">
+                    <i class="fa fa-close"></i>
+                </a>
+            </div>
+            <ul></ul>
+        </div>
+        <!-- //Responsive nav Space -->
+        <div class="wrapper">
+            <div class="wrapper-inner">
+                <header id="header" class="bg-darken">
+                    <div class="container">
+                        <div class="header-action">
+                            <div id="logintopbtn" class="dashboardcookie">
+                                <a href="/SalsurveyUsers/login" class="btn-square second">login</a>
+                            </div>
+                            <!-- //logintopbtn -->
+                        </div>
+                        <div class="row">
+                            <div class="logo">
+                                <a href="#">
+                                    <figure class="logo-thumb">
+                                        <img src="assets/img/logo_white.png" alt="">
+                                    </figure>
+                                </a>
+                            </div>
+                            <!-- //logo -->
+                            <div class="banner-ads-sub">
+                                <a href="#">
+                                    <img src="http://placehold.it/600x75">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <!-- HEADER -->
+                <div id="main" role="main">
+                    <div class="space45"></div>
+                    <div class="container">
+                        <div class="border-wrap">
+                            <div class="center-container">
+                                <div class="box-notif">
+                                    <p>Upon completion of this page you will immediately see salaries from our database that match your profile. Thank you for contributing!</p>
+                                    <span class="small">All salaries are posted anonymously.</span>
+                                </div>
+                            </div>
+                            <!--// center-cotainer -->
+                        </div>
+                        <!-- //border-wrap -->
+                        <div class="center-container">
+                            <div class="greenprogress">
+                                <div class="progreswrap press" data-progress-percent="0" id="progress-bar">
+                                    <div class="progresbar press" style="left: 0px;"></div>
+                                </div>
+                                <p><span id="p_percent">0%</span> complete </p>
+                            </div>
+                            <!--// greenprogress -->
+                            <div class="title-formWrap">
+                                <div class="title-form">
+                                    <span>STEP 1 :</span> YOUR JOB
+                                </div>
+                            </div>
+                            <!-- //title-form -->
+                            <div class="form-wrapper">
+                                <div class="half in-left">
+                                    <div class="box-field">
+                                        <span class="label-field"><strong>1.</strong> Your Specialist Area</span>
+                                        <div class="wrap-validation">
+                                            <select class="selectpicker select2">
+                                                <option value="">Choose your specialist</option>
+                                                <option value="PA">Audio And Sound</option>
+                                                <option value="CT">Option 3</option>
+                                                <option value="NY">Option 4</option>
+                                                <option value="MD">Option 5</option>
+                                                <option value="VA">Option 6</option>
+                                                <option value="VA">Option 7</option>
+                                                <option value="VA">Option 8</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- / .half .in-left -->
+                                <div class="half in-right">
+                                    <div class="box-field">
+                                        <span class="label-field"><strong>2.</strong>Your Current Role </span>
+                                        <div class="wrap-validation">
+                                            <select class="selectpicker select2">
+                                                <option value="">Choose your Current Role</option>
+                                                <option value="PA">Audio And Sound</option>
+                                                <option value="CT">Option 3</option>
+                                                <option value="NY">Option 4</option>
+                                                <option value="MD">Option 5</option>
+                                                <option value="VA">Option 6</option>
+                                                <option value="VA">Option 7</option>
+                                                <option value="VA">Option 8</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- / .half .in-right -->
+                                <div class="clearfix"></div>
+                                <div class="half in-left">
+                                    <div class="box-field">
+                                        <p class="label-field">
+                                            <strong>3.</strong>Exact Job title-formle
+                                        </p>
+                                        <input type="text" class="form-control  disableinp" class="form-control" disabled="disable" placeholder="E.g Gameplayer Programmer">
+                                    </div>
+                                </div>
+                                <!-- / .half .in-left -->
+                                <div class="half in-right">
+                                    <div class="box-field">
+                                        <span class="label-field"><strong>4.</strong>Your Job Type</span>
+                                        <div class="wrap-validation">
+                                            <select class="selectpicker select2">
+                                                <option value="">Please select</option>
+                                                <option value="2">Contract</option>
+                                                <option value="3">Part Time</option>
+                                                <option value="1">Permanent</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- / .half .in-right -->
+                                <div class="clearfix"></div>
+                                <div class="half in-left">
+                                    <div class="box-field">
+                                        <span class="label-field"><strong>5.</strong>Your Country of Employmente</span>
+                                        <div class="wrap-validation">
+                                            <select class="selectpicker select2">
+                                                <option value="">Please select</option>
+                                                <option value="2">Contract</option>
+                                                <option value="3">Part Time</option>
+                                                <option value="1">Permanent</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- / .in-full -->
+                                <div class="half in-right">
+                                    <div class="box-field">
+                                        <span class="label-field">
+                            <strong>6.</strong>Your City of Employment
+                        </span>
+                                        <input class="form-control" placeholder="Enter city and select from list">
+                                    </div>
+                                </div>
+                                <!-- / .in-full -->
+                            </div>
+                            <!-- Form-wrapper -->
+                            <div class="title-formWrap">
+                                <div class="title-form">
+                                    <span>STEP 2 :</span> TELL US ABOUT YOUR SALARY
+                                </div>
+                            </div>
+                            <!-- // title-form -->
+                            <div class="form-wrapper">
+                                <div class="half in-left">
+                                    <div class="box-field">
+                                        <span class="label-field">
+                            <strong>7.</strong> Your Annual Base Salary
+                        </span>
+                                        <div class="wrap-validation">
+                                            <div class="check-val">
+                                                <input placeholder=" E.g. 45000" required="required disableinp" class="form-control" disabled="disable">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- / .box-field -->
+                                </div>
+                                <!-- //half in-left -->
+                                <div class="half in-right">
+                                    <div class="box-field bonus-field">
+                                        <span class="label-field">
+                            <strong>8.</strong>
+                            Your Annual Bonus
+                        </span>
+                                        <div class="wrap-validation">
+                                            <div class="check-val">
+                                                <input class="form-control tooltipstered" placeholder=" E.g. 3000 ">
+                                            </div>
+                                            <span class="cx-boxNobonus">
+                               <div class="checkbox">
+                                  <label>
+                                    <input type="checkbox" value="">
+                                    Select if no bonus
+                                  </label>
+                                </div>
+                            </span>
+                                        </div>
+                                    </div>
+                                    <!-- / .box-field -->
+                                </div>
+                                <!-- //half in-right -->
+                                <div class="cleafix"></div>
+                                <div class="half in-left">
+                                    <div class="box-field">
+                                        <span class="label-field"><strong>9.</strong> Your Salary Currency</span>
+                                        <div class="wrap-validation">
+                                            <select class="selectpicker select2">
+                                                <option>Please Select</option>
+                                                <option value="PA">Audio And Sound</option>
+                                                <option value="CT">Option 3</option>
+                                                <option value="NY">Option 4</option>
+                                                <option value="MD">Option 5</option>
+                                                <option value="VA">Option 6</option>
+                                                <option value="VA">Option 7</option>
+                                                <option value="VA">Option 8</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- //half in-left -->
+                                <div class="half in-right">
+                                    <div class="box-field">
+                                        <span class="label-field">
+                            <strong>10.</strong>Your Additional Benefits
+                        </span>
+                                        <div class="wrap-validation">
+                                            <select class="selectpicker select2">
+                                                <option>Nothing Selected</option>
+                                                <option value="22">I do not receive additional benefits</option>
+                                                <option value="4">Childcare</option>
+                                                <option value="1">Company car / car allowance</option>
+                                                <option value="5">Company pension scheme</option>
+                                                <option value="2">Extra annual leave</option>
+                                                <option value="6">Flexible working hours</option>
+                                                <option value="7">Free language tuition</option>
+                                                <option value="8">Free parking</option>
+                                                <option value="9">Gym or health club membership</option>
+                                                <option value="10">Laptop / personal computer</option>
+                                                <option value="11">Life insurance</option>
+                                                <option value="12">Mobile phone</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- //half in-right -->
+                                <div class="clearfix"></div>
+                            </div>
+                            <!-- //form-wrapper -->
+                            <div class="title-formWrap">
+                                <div class="title-form">
+                                    <span>STEP 3 :</span>TELL US ABOUT YOU & YOUR COMPANY
+                                </div>
+                            </div>
+                            <!-- title-form -->
+                            <div class="form-wrapper">
+                                <div class="half in-left">
+                                    <div class="box-field">
+                                        <span class="label-field">
+                            <strong>11.</strong>Years In This Career
+                        </span>
+                                        <div class="wrap-validation">
+                                            <select class="selectpicker select2">
+                                                <option value="">Please select</option>
+                                                <option value="1">1 year</option>
+                                                <option value="2">1 year</option>
+                                                <option value="3">2 years</option>
+                                                <option value="4">3 years</option>
+                                                <option value="5">4 years</option>
+                                                <option value="6">5 years</option>
+                                                <option value="7">6-8 years</option>
+                                                <option value="8">9-10 years</option>
+                                                <option value="9">11-15 years</option>
+                                                <option value="10">16-20 years</option>
+                                                <option value="11">21-30 years</option>
+                                                <option value="12">31years + </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="half in-right">
+                                    <div class="box-field">
+                                        <span class="label-field">
+                            <strong>12.</strong>Highest Level Of Education
+                        </span>
+                                        <div class="wrap-validation">
+                                            <select class="selectpicker select2">
+                                                <option value="">Please select</option>
+                                                <option value="1">Completed High School</option>
+                                                <option value="2">Diploma</option>
+                                                <option value="3">Bachelor (undergraduate) Degree</option>
+                                                <option value="4">Masters (graduate) Degree</option>
+                                                <option value="5">PhD / Doctorate (postgraduate)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="half in-left">
+                                    <div class="box-field">
+                                        <span class="label-field">
+                            <strong>13.</strong> Number of Direct Reports
+                        </span>
+                                        <div class="wrap-validation">
+                                            <select class="selectpicker select2">
+                                                <option value="">Please select</option>
+                                                <option value="1">None</option>
+                                                <option value="2">1-3</option>
+                                                <option value="3">4-6</option>
+                                                <option value="4">7-10</option>
+                                                <option value="5">11-25</option>
+                                                <option value="6">26-50</option>
+                                                <option value="7">51-100</option>
+                                                <option value="8">101-250</option>
+                                                <option value="9">251+</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="half in-right">
+                                    <div class="box-field">
+                                        <span class="label-field">
+                            <strong>14.</strong>Your Employer Type
+                        </span>
+                                        <div class="wrap-validation">
+                                            <select class="selectpicker select2">
+                                                <option value="">Please select</option>
+                                                <option value="1">Advertising</option>
+                                                <option value="2">Developer</option>
+                                                <option value="3">Distributor</option>
+                                                <option value="4">Hosting</option>
+                                                <option value="5">Localization</option>
+                                                <option value="6">Manufacturing</option>
+                                                <option value="7">Media</option>
+                                                <option value="8">Monetization</option>
+                                                <option value="9">PR / Marketing</option>
+                                                <option value="10">Publisher</option>
+                                                <option value="11">Recruitment</option>
+                                                <option value="12">Retail</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="half in-left">
+                                    <div class="box-field">
+                                        <span class="label-field">
+                            <strong>15.</strong>Your Employer Size
+                        </span>
+                                        <div class="wrap-validation">
+                                            <select class="selectpicker select2">
+                                                <option value="">Please select</option>
+                                                <option value="1">Micro (1-19 Staff)</option>
+                                                <option value="2">Small (10-49 Staff)</option>
+                                                <option value="3">Medium (50-249 Staff)</option>
+                                                <option value="4">Large (250+ Staff)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="half in-right">
+                                    <div class="box-field">
+                                        <span class="label-field">
+                            <strong>16.</strong>Your Gender
+                        </span>
+                                        <div class="wrap-validation">
+                                            <select class="selectpicker select2">
+                                                <option value=""> Please select </option>
+                                                <option value="1">Male</option>
+                                                <option value="2">Female</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="half in-left">
+                                    <div class="box-field">
+                                        <span class="label-field">
+                            <strong>17.</strong> Name Your Price
+                        </span>
+                                        <div class="wrap-validation">
+                                            <select class="selectpicker select2">
+                                                <option value="">Please select</option>
+                                                <option value="1">None, I would leave for LESS money</option>
+                                                <option value="2">None, I am happy where I am</option>
+                                                <option value="3">500 increase per year</option>
+                                                <option value="4">1000 increase per year</option>
+                                                <option value="5">1500 increase per year</option>
+                                                <option value="6">2000 increase per year</option>
+                                                <option value="7">2500 increase per year</option>
+                                                <option value="8">3000 increase per year</option>
+                                                <option value="9">3500 increase per year</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="half in-right">
+                                    <div class="box-field">
+                                        <span class="label-field">
+                            <strong>18.</strong>Your Email Address (confidential)
+                        </span>
+                                        <input class="form-control" placeholder="E.g. john.smith@gmail.com">
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="checkform1">
+                                    <label>
+                                        <input class="cxbox" type="checkbox">
+                                    </label>
+                                    <span>Salary Alerts</span>
+                                    <p>Alert me by email when new salary enteries are added that match my profile.</p>
+                                </div>
+                                <div class="checkform1">
+                                    <label>
+                                        <input class="cxbox" type="checkbox">
+                                    </label>
+                                    <span>Job Alerts</span>
+                                    <p>Alert me by email when new job opportunities are added that match my profile.</p>
+                                </div>
+                                <div class="note3">
+                                    <p>N.B. We will never share your email address with 3rd parties and all data entered on this form is anonymous.</p>
+                                </div>
+                            </div>
+                            <!-- Form wrapper -->
+                            <div class="clearfix"></div>
+                            <div class="space45"></div>
+                            <div class="text-center">
+                                <input type="submit" class="btn-square arrRight" value="Submit & Compare">
+                            </div>
+                            <div class="space45"></div>
+                        </div>
+                        <!-- //center-container -->
+                    </div>
+                </div>
+                <!-- //MAIN -->
+                <footer id="footer">
+                    <div class="footMenu">
+                        <div class="container">
+                            <div class="row">
+                                <div class="footMenu-item col-md-4">
+                                    <h3 class="title-foot">employees</h3>
+                                    <ul>
+                                        <li><a href="#">Add your Salary</a></li>
+                                        <li><a href="#">Search Salaries</a></li>
+                                        <li><a href="#">Search Jobs</a></li>
+                                        <li><a href="#">A-Z of Employers</a></li>
+                                        <li><a href="#"> FAQs</a></li>
+                                    </ul>
+                                </div>
+                                <div class="footMenu-item col-md-4">
+                                    <h3 class="title-foot">companies</h3>
+                                    <ul>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Branding Opportunities</a></li>
+                                        <li><a href="#">Post Jobs</a></li>
+                                        <li><a href="#">Request a Report</a></li>
+                                        <li><a href="#"> FAQs</a></li>
+                                    </ul>
+                                </div>
+                                <div class="footMenu-item col-md-4">
+                                    <h3 class="title-foot">legal</h3>
+                                    <ul>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                        <li><a href="#">Terms of Use</a></li>
+                                        <li><a href="#">Cookie Policy</a></li>
+                                        <li><a href="#">Site Map</a></li>
+                                    </ul>
+                                </div>
+                                <div class="ss-social">
+                                    <a href="#" class="fb"><i class="fa fa-facebook"></i></a>
+                                    <a href="#" class="tw"><i class="fa fa-twitter"></i></a>
+                                    <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                                    <a href="#" class="google"><i class="fa fa-google"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //footMenu -->
+                    <div class="footcontact">
+                        <div class="container">
+                            <p class="phone">Call us today on 0800 123 456</p>
+                            <p class="email"><a href="#">info@yourcompany.com</a></p>
+                        </div>
+                    </div>
+                    <!-- //footcontact -->
+                    <div class="container">
+                        <div class="copyright">
+                            <div class="copyItem">&copy;Your company Salary Survey. All rights reserved.</div>
+                            <div class="copyItem">Salary Survey Software by <a href='#' target='_blank'> MySalarySurvey.com</a></div>
+                        </div>
+                        <!-- //copyright -->
+                    </div>
+                </footer>
+                <!-- //FOOTER -->
+                <!-- 
+         -->
+            </div>
+            <!-- wrapper-inner -->
+        </div>
+        <!-- / .wrapper -->
+        <script src="assets/js/libs.js"></script>
+        <script src="assets/js/vendor.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script src="assets/js/global.js"></script>
+        <script src="//localhost:35729/livereload.js"></script>
+    </body>
+</html>

@@ -141,6 +141,15 @@ module.exports = function(grunt) {
           }
       },
 
+       /* HTMLHINT CONFIGURATION
+        /* ------------------------------------ */
+        htmlhint: {
+            options: {
+              'tag-pair': true
+            },
+            src: ['*.html']
+        },
+
       // Syncronize Files
       sync: {
           fonts: {
@@ -193,6 +202,10 @@ module.exports = function(grunt) {
             files: ['template/{,*/}*.hbs', 'template/data/{,*/}*.yml', 'template/data/{,*/}*.json'],
             tasks: ['assemble',  'prettify:all']
           },
+          html: {
+              files: ['*.html'],
+              tasks: ['htmlhint'],
+          }, // html
           fonts: {
             files: ['assets/fonts/**'],
             tasks: ['sync:fonts']
@@ -228,9 +241,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-compass-multiple');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-htmlhint');
 
   // Default Task is basically a rebuild
-  grunt.registerTask('default', ['assemble', 'compassMultiple','imagemin' , 'concat', 'prettify:all', 'sync', 'connect', 'watch']);
+  grunt.registerTask('default', ['assemble', 'compassMultiple','imagemin' , 'concat', 'prettify:all', 'htmlhint', 'sync', 'connect', 'watch']);
   // Moved to the tasks folder:
   //grunt.registerTask('dev', ['connect', 'watch']);
 

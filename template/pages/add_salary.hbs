@@ -1,185 +1,383 @@
-<div class="hero" style="background-image: url('assets/img/banner.jpg')">
-    <div class="search-actionbar">
-        <div class="container">
-            <div class="desc"><p>Already Contributed? Then you can...</p>  </div>
-            <div class="btn-wrap">
-                <a href="#" class="btn-square trans">search for jobs</a>
-                <a href="#" class="btn-square trans"> search salaries</a>
-            </div>  
-        </div>
-    </div> <!-- //search-actionbar -->
-    
+<div id="main" role="main">
+    <div class="space45"></div>
     <div class="container">
-        <div class="hero-desc">
-            <h2><span class="primary-color">308</span> real salaries, <span class="primary-color">43</span> live jobs</h2>
-            <div class="content-text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisihenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occae</p></div>
-        </div>
+        <div class="border-wrap">
+            <div class="center-container">
+                <div class="box-notif">
+                    <p>Upon completion of this page you will immediately see salaries from our database that match your profile. Thank you for contributing!</p>
+                    <span class="small">All salaries are posted anonymously.</span>
+                </div>
+             </div> <!--// center-cotainer -->
+        </div><!-- //border-wrap -->
 
-        <div class="mainsearch salinputwrap">
-            <form action="/SalaryRecords/addSalaryRecord" class="form-horizontal" id="form_sample_1" method="post" accept-charset="utf-8" novalidate="novalidate">
-                <div class="form-box">
-                    <div class="src-group">
+        <div class="center-container">
+            <div class="greenprogress">
+                <div class="progreswrap press" data-progress-percent="0" id="progress-bar">
+                    <div class="progresbar press" style="left: 0px;"></div>
+                </div>
+                <p><span id="p_percent">0%</span> complete </p>
+            </div><!--// greenprogress -->
+
+            <div class="title-formWrap">
+                <div class="title-form">
+                    <span>STEP 1 :</span> YOUR JOB 
+                </div>
+            </div><!-- //title-form -->
+
+            <div class="form-wrapper">
+
+                <div class="half in-left">
+                    <div class="box-field">
+                        <span class="label-field"><strong>1.</strong> Your Specialist Area</span>
+                        <div class="wrap-validation">
+                            <select class="selectpicker select2">
+                                  <option value="">Choose your specialist</option>
+                                  <option value="PA">Audio And Sound</option>
+                                  <option value="CT">Option 3</option>
+                                  <option value="NY">Option 4</option>
+                                  <option value="MD">Option 5</option>
+                                  <option value="VA">Option 6</option>
+                                  <option value="VA">Option 7</option>
+                                  <option value="VA">Option 8</option>
+                             </select>
+                         </div> 
+                     </div>
+                </div><!-- / .half .in-left -->
+
+                <div class="half in-right">
+                    <div class="box-field">
+                        <span class="label-field"><strong>2.</strong>Your Current Role </span>
+                        <div class="wrap-validation">
+                            <select class="selectpicker select2">
+                                  <option value="">Choose your Current Role</option>
+                                  <option value="PA">Audio And Sound</option>
+                                  <option value="CT">Option 3</option>
+                                  <option value="NY">Option 4</option>
+                                  <option value="MD">Option 5</option>
+                                  <option value="VA">Option 6</option>
+                                  <option value="VA">Option 7</option>
+                                  <option value="VA">Option 8</option>
+                             </select>
+                         </div>
+                     </div>
+                </div><!-- / .half .in-right -->
+                <div class="clearfix"></div>
+                <div class="half in-left">
+                    <div class="box-field">
+                        <p class="label-field">
+                            <strong>3.</strong>Exact Job title-formle
+                        </p>
+                        <input type="text" class="form-control  disableinp" class="form-control" disabled="disable" placeholder="E.g Gameplayer Programmer">
+                    </div>
+                </div><!-- / .half .in-left -->
+                <div class="half in-right">
+                    <div class="box-field">
+                        <span class="label-field"><strong>4.</strong>Your Job Type</span>
+                        <div class="wrap-validation">
+                            <select class="selectpicker select2">
+                                <option value="">Please select</option>
+                                <option value="2">Contract</option>
+                                <option value="3">Part Time</option>
+                                <option value="1">Permanent</option>
+                             </select>
+                        </div>
+                     </div>
+                </div><!-- / .half .in-right -->
+                <div class="clearfix"></div>
+
+                <div class="half in-left">
+                    <div class="box-field">
+                        <span class="label-field"><strong>5.</strong>Your Country of Employmente</span>
+                        <div class="wrap-validation">
+                            <select class="selectpicker select2">
+                                <option value="">Please select</option>
+                                <option value="2">Contract</option>
+                                <option value="3">Part Time</option>
+                                <option value="1">Permanent</option>
+                             </select>
+                        </div>
+                     </div>
+                </div><!-- / .in-full -->
+
+                <div class="half in-right">
+                    <div class="box-field">
+                        <span class="label-field">
+                            <strong>6.</strong>Your City of Employment
+                        </span>
+                        <input class="form-control" placeholder="Enter city and select from list">
+                    </div>
+                </div><!-- / .in-full -->
+            </div><!-- Form-wrapper -->
+
+            <div class="title-formWrap">
+                <div class="title-form">
+                    <span>STEP 2 :</span> TELL US ABOUT YOUR SALARY
+                </div>
+            </div><!-- // title-form -->
+
+            <div class="form-wrapper">
+                <div class="half in-left">
+                    <div class="box-field">
+                        <span class="label-field">
+                            <strong>7.</strong> Your Annual Base Salary
+                        </span>
                         <div class="wrap-validation">
                             <div class="check-val">
-                                <div class="input select required">
-                                   <select name="data[SalaryRecord][profession_id]" required="required" class="form-control required selectpicker select1 selectpicker" onchange="getprofessionrole();" tabindex="1" id="SalaryRecordProfessionId">
-                                        <option value="">Your specialist area</option>
-                                        <option value="1">Option 1</option>
-                                        <option value="2">Option 2</option>
-                                        <option value="3">Option 3</option>
-                                        <option value="5">Option 4</option>
-                                        <option value="4">Option 5</option>
-                                      </select>
+                                <input placeholder=" E.g. 45000" required="required disableinp" class="form-control" disabled="disable">   
+                            </div>
+                        </div>
+                    </div><!-- / .box-field -->
+                </div><!-- //half in-left -->
+
+                <div class="half in-right">
+                    <div class="box-field bonus-field">
+                        <span class="label-field">
+                            <strong>8.</strong>
+                            Your Annual Bonus
+                        </span>
+                        <div class="wrap-validation">
+                            <div class="check-val">
+                                <input class="form-control tooltipstered" placeholder=" E.g. 3000 "  >
+                            </div>
+                             <span class="cx-boxNobonus">
+                               <div class="checkbox">
+                                  <label>
+                                    <input type="checkbox" value="">
+                                    Select if no bonus
+                                  </label>
                                 </div>
-                            </div>
+                            </span> 
                         </div>
-                    </div>  <!-- //form-group --> 
-                    <div class="src-group">
-                        <div class="wrap-validation">
-                            <div class="check-val">
-                                <select id="SalaryRecordProfessionRoleId" class="form-control selectpicker select1" name="data[SalaryRecord][profession_role_id]" >
-                                    <option value="">Your current role</option>
-                                    <option value="1">Option 1</option>
-                                    <option value="2">Option 2</option>
-                                    <option value="3">Option 3</option>
-                                    <option value="5">Option 4</option>
-                                    <option value="4">Option 5</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div><!-- //form-group --> 
+                       
+                    </div><!-- / .box-field -->
+                </div> <!-- //half in-right -->
+                <div class="cleafix"></div>
 
-                    <div class="src-group">
+                <div class="half in-left">
+                    <div class="box-field">
+                        <span class="label-field"><strong>9.</strong> Your Salary Currency</span>
                         <div class="wrap-validation">
-                            <div class="check-val">
-                                <input name="data[SalaryRecord][exact_job_title]" class="form-control"  placeholder=" Your exact job title " required="required" tabindex="3" type="text" id="SalaryRecordExactJobTitle">                        
-                            </div>
+                           <select class="selectpicker select2">
+                                <option>Please Select</option>
+                                <option value="PA">Audio And Sound</option>
+                                <option value="CT">Option 3</option>
+                                <option value="NY">Option 4</option>
+                                <option value="MD">Option 5</option>
+                                <option value="VA">Option 6</option>
+                                <option value="VA">Option 7</option>
+                                <option value="VA">Option 8</option>
+                            </select>   
                         </div>
                     </div>
-                </div><!-- /form-box -->
+                </div><!-- //half in-left -->
 
-                <div class="src-group-btn">
-                    <input type="submit" class="btn-square trans" value="Next">
+                <div class="half in-right">
+                     <div class="box-field">
+                        <span class="label-field">
+                            <strong>10.</strong>Your Additional Benefits
+                        </span>
+                        <div class="wrap-validation">
+                            <select class="selectpicker select2">
+                                <option>Nothing Selected</option>
+                                <option value="22">I do not receive additional benefits</option>
+                                <option value="4">Childcare</option>
+                                <option value="1">Company car / car allowance</option>
+                                <option value="5">Company pension scheme</option>
+                                <option value="2">Extra annual leave</option>
+                                <option value="6">Flexible working hours</option>
+                                <option value="7">Free language tuition</option>
+                                <option value="8">Free parking</option>
+                                <option value="9">Gym or health club membership</option>
+                                <option value="10">Laptop / personal computer</option>
+                                <option value="11">Life insurance</option>
+                                <option value="12">Mobile phone</option>
+                            </select>
+                        </div>
+                    </div>
+                </div> <!-- //half in-right -->
+                <div class="clearfix"></div>
+            </div><!-- //form-wrapper -->
+
+            <div class="title-formWrap">
+                <div class="title-form">
+                    <span>STEP 3 :</span>TELL US ABOUT YOU & YOUR COMPANY
                 </div>
-            </form>
-        </div><!-- mainsearch -->
-    </div>
-</div><!-- //Hero -->
-
-<div id="main" role="main" >
-    <div class="section-contribution">
-        <div class="container">
-            <figure><img src="assets/img/box.png" alt=""></figure>
-            <article class="desc">
-                <h2 class="title-md">
-                    <strong class="primary-color">a free</strong> salary exchange website for your industry.
-                </h2>
-                <div class="content-text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisihenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occae</p>
-                    <div class="text-right">
-                        <a href="#" class="btn-square trans">contribute</a>
+                </div><!-- title-form -->
+            <div class="form-wrapper">
+                <div class="half in-left">
+                    <div class="box-field">
+                        <span class="label-field">
+                            <strong>11.</strong>Years In This Career
+                        </span>
+                        <div class="wrap-validation">
+                            <select class="selectpicker select2">
+                                <option value="">Please select</option>
+                                <option value="1">1 year</option>
+                                <option value="2">1 year</option>
+                                <option value="3">2 years</option>
+                                <option value="4">3 years</option>
+                                <option value="5">4 years</option>
+                                <option value="6">5 years</option>
+                                <option value="7">6-8 years</option>
+                                <option value="8">9-10 years</option>
+                                <option value="9">11-15 years</option>
+                                <option value="10">16-20 years</option>
+                                <option value="11">21-30 years</option>
+                                <option value="12">31years + </option>
+                            </select>
+                        </div>
                     </div>
                 </div>
-            </article>
-        </div>
-    </div><!-- //section-contribution -->
-
-    <section class="emreason">
-        <div class="container">
-            {{#whyus}}
-                <h2 class="title-md">{{{title}}}</h2>
-                <div class="row">
-                    {{~#item}}
-                        <article class="emreason-box col-sm-4">
-                            <a href="#">
-                                <figure><img src="assets/img/{{thumb}}"></figure>
-                                <h3>{{title}}</h3>
-                                <div class="content-text">
-                                    <p>{{desc}}</p>
-                                </div>
-                            </a>
-                        </article> <!-- //emreason-box -->
-                    {{~/item}}
+                <div class="half in-right">
+                     <div class="box-field">
+                        <span class="label-field">
+                            <strong>12.</strong>Highest Level Of Education
+                        </span>
+                        <div class="wrap-validation">
+                            <select class="selectpicker select2">
+                                <option value="">Please select</option>
+                                <option value="1">Completed High School</option>
+                                <option value="2">Diploma</option>
+                                <option value="3">Bachelor (undergraduate) Degree</option>
+                                <option value="4">Masters (graduate) Degree</option>
+                                <option value="5">PhD / Doctorate (postgraduate)</option>
+                            </select>
+                        </div>
+                      </div>
                 </div>
-            {{/whyus}}
-        </div>
-    </section><!-- //emreason -->
+                <div class="clearfix"></div>
 
-    <div class="sshome-table">
-        {{#salaryTable}}
-        <header>
-            <div class="container">
-              <h2 class="title-md">{{{title}}}</h2> 
-            </div> 
-        </header>
-        
-        <div class="container"> 
-            <div class="table-responsive">
-                <table class="table tb-contrib"> 
-                    <tr>
-                        <th>salary</th>
-                        <th>job title</th>
-                        <th>location</th>
-                        <th>Job type</th>
-                        <th>date added</th>
-                        <th style="width: 14%"></th>
-                    </tr>
-                    <tr><td colspan="6" class="td-space-head"></td></tr>
-                    {{~#list}}
-                    <tr>
-                        <td class="{{#is new true}}new{{/is}}">
-                            <span class="tb-salary">{{salary}}</span>
-                        </td>
-                        <td>{{job}}</td>
-                        <td>{{location}}</td>
-                        <td>{{type}}</td>
-                        <td>{{date}}</td>
-                        <td class="action" width="17%"><a href="#" class="btn-tbDetail">{{btn}}</a></td>
-                    </tr>
-                    <tr><td colspan="6" class="td-space"></td></tr>
-                    {{~/list}}
-                </table>
+                <div class="half in-left">
+                    <div class="box-field">
+                        <span class="label-field">
+                            <strong>13.</strong> Number of Direct Reports
+                        </span>
+                        <div class="wrap-validation">
+                            <select class="selectpicker select2">
+                                <option value="">Please select</option>
+                                <option value="1">None</option>
+                                <option value="2">1-3</option>
+                                <option value="3">4-6</option>
+                                <option value="4">7-10</option>
+                                <option value="5">11-25</option>
+                                <option value="6">26-50</option>
+                                <option value="7">51-100</option>
+                                <option value="8">101-250</option>
+                                <option value="9">251+</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="half in-right">
+                    <div class="box-field">
+                        <span class="label-field">
+                            <strong>14.</strong>Your Employer Type
+                        </span>
+                        <div class="wrap-validation">
+                            <select class="selectpicker select2">
+                                <option value="">Please select</option>
+                                <option value="1">Advertising</option>
+                                <option value="2">Developer</option>
+                                <option value="3">Distributor</option>
+                                <option value="4">Hosting</option>
+                                <option value="5">Localization</option>
+                                <option value="6">Manufacturing</option>
+                                <option value="7">Media</option>
+                                <option value="8">Monetization</option>
+                                <option value="9">PR / Marketing</option>
+                                <option value="10">Publisher</option>
+                                <option value="11">Recruitment</option>
+                                <option value="12">Retail</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+
+                <div class="half in-left">
+                    <div class="box-field">
+                        <span class="label-field">
+                            <strong>15.</strong>Your Employer Size
+                        </span>
+                        <div class="wrap-validation">
+                             <select class="selectpicker select2">
+                                <option value="">Please select</option>
+                                <option value="1">Micro (1-19 Staff)</option>
+                                <option value="2">Small (10-49 Staff)</option>
+                                <option value="3">Medium (50-249 Staff)</option>
+                                <option value="4">Large (250+ Staff)</option>
+                             </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="half in-right">
+                    <div class="box-field">
+                        <span class="label-field">
+                            <strong>16.</strong>Your Gender
+                        </span>
+                        <div class="wrap-validation">
+                             <select class="selectpicker select2">
+                                <option value=""> Please select </option>
+                                <option value="1">Male</option>
+                                <option value="2">Female</option>
+                             </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+
+                <div class="half in-left">
+                   <div class="box-field">
+                        <span class="label-field">
+                            <strong>17.</strong> Name Your Price
+                        </span>
+                        <div class="wrap-validation">
+                             <select class="selectpicker select2">
+                                <option value="">Please select</option>
+                                <option value="1">None, I would leave for LESS money</option>
+                                <option value="2">None, I am happy where I am</option>
+                                <option value="3">500 increase per year</option>
+                                <option value="4">1000 increase per year</option>
+                                <option value="5">1500 increase per year</option>
+                                <option value="6">2000 increase per year</option>
+                                <option value="7">2500 increase per year</option>
+                                <option value="8">3000 increase per year</option>
+                                <option value="9">3500 increase per year</option>
+                             </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="half in-right">
+                    <div class="box-field">
+                        <span class="label-field">
+                            <strong>18.</strong>Your Email Address (confidential)
+                        </span>
+                        <input class="form-control" placeholder="E.g. john.smith@gmail.com">
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="checkform1">
+                    <label><input class="cxbox" type="checkbox"></label>
+                    <span>Salary Alerts</span>
+                    <p>Alert me by email when new salary enteries are added that match my profile.</p>
+                </div>
+                <div class="checkform1">
+                    <label><input class="cxbox" type="checkbox"></label>
+                    <span>Job Alerts</span>
+                    <p>Alert me by email when new job opportunities are added that match my profile.</p>
+                </div> 
+                <div class="note3">
+                    <p>N.B. We will never share your email address with 3rd parties and all data entered on this form is anonymous.</p>
+                </div>
+            </div> <!-- Form wrapper -->
+            <div class="clearfix"></div>
+            <div class="space45"></div>
+            <div class="text-center">
+                <input type="submit" class="btn-square arrRight" value="Submit & Compare"> 
             </div>
-        {{/salaryTable}}
+            <div class="space45"></div>
+        </div> <!-- //center-container --> 
 
-            <article class="sshome-table-desc">
-                <h2 class="title-md">All salaries are posted anonymously.</h2>
-                <div class="content-text">
-                    <p>XYZ Salary Survey is the only live real-time salary survey for your industy providing accurate, global remuneration data to employees and companies 24/7/365.</p>
-                </div>
-            </article><!-- //sshome-table-desc -->
-        </div>
-    </div> <!-- //sshome-table -->
-
-     <div class="ss-join">
-        <div class="container">
-        {{#signup}}
-            <header>
-                <h2 class="title-md">{{title}}</h2>
-                <div class="content-text">
-                 <p>{{desc}}</p>
-                </div>
-            </header>
-            <div class="form-join row">
-                <form>
-                  <div class="form-group col-md-4">
-                    <input type="text" class="form-control" placeholder="First Name">
-                  </div>
-                  <div class="form-group col-md-4">
-                    <input type="text" class="form-control" placeholder="Last Name">
-                  </div>
-                  <div class="form-group col-md-4">
-                    <input type="email" class="form-control" placeholder="Valid email address">
-                  </div>
-                  <div class="clearfix"></div>
-                  <div class="form-groupBtn">
-                      <input type="submit" value="sign up" class="btn-square">
-                  </div>
-                </form>
-            </div><!-- //form-join -->
-        {{/signup}}
-        </div>
-    </div><!-- //ss-join -->
-
+    </div>
 </div> <!-- //MAIN -->
   

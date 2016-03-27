@@ -24,7 +24,7 @@
 	}
 }
 
-.header-ads{
+.banner-ads{
 	@include make-sm-column(7);
 	@include make-md-column(5);
 	text-align: center;
@@ -34,6 +34,15 @@
 	}
 	@media screen and (min-width: 62em){
 		text-align: center;
+	}
+}
+.banner-ads-sub{
+	@include make-md-column(8);
+	text-align: center;
+	@media screen and (min-width: 48em){
+		padding-top: 23px;	
+		text-align: right;
+		float: right !important;
 	}
 }
 
@@ -52,5 +61,20 @@
 	}
 	.btn-square{
 		margin-left: 10px;
+	}
+}
+
+.header-action{
+	#logintopbtn{
+		overflow: hidden;
+		color: #fff;
+	    display: block;
+	    font-size: 12px;
+	    margin-top: -22px;
+	    margin-bottom: 20px;
+	    min-width: none !important;
+	    width: 100%;
+	    position: relative;
+	    text-align: right
 	}
 }

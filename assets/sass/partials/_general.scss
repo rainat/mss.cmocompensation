@@ -90,6 +90,12 @@ img {
 	}
 }
 
+.center-container{
+	max-width: 780px;
+	margin: 0 auto;
+	@include clearfix();
+}
+
 /** SPACE
 ===================================*/
 $spacer:
@@ -151,6 +157,12 @@ $spacer:
 		@include opacity(0.7);
 		color: white;
 		text-decoration: none;
+	}
+
+	&.arrRight{
+		background-image: image-url('btn-arrow.png');
+		background-position: 94% 50%;
+    	background-repeat: no-repeat
 	}
 }
 
