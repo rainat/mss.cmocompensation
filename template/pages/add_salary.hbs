@@ -30,16 +30,19 @@
                     <div class="box-field">
                         <span class="label-field"><strong>1.</strong> Your Specialist Area</span>
                         <div class="wrap-validation">
-                            <select class="selectpicker select2">
-                                  <option value="">Choose your specialist</option>
-                                  <option value="PA">Audio And Sound</option>
-                                  <option value="CT">Option 3</option>
-                                  <option value="NY">Option 4</option>
-                                  <option value="MD">Option 5</option>
-                                  <option value="VA">Option 6</option>
-                                  <option value="VA">Option 7</option>
-                                  <option value="VA">Option 8</option>
-                             </select>
+                            <div class="check-val error">
+                                <select class="selectpicker select2">
+                                      <option value="">Choose your specialist</option>
+                                      <option value="PA">Audio And Sound</option>
+                                      <option value="CT">Option 3</option>
+                                      <option value="NY">Option 4</option>
+                                      <option value="MD">Option 5</option>
+                                      <option value="VA">Option 6</option>
+                                      <option value="VA">Option 7</option>
+                                      <option value="VA">Option 8</option>
+                                 </select>
+                                <span for="SalaryRecordProfessionId" generated="true" class="error">This field is required.</span>
+                             </div>
                          </div> 
                      </div>
                 </div><!-- / .half .in-left -->
@@ -67,19 +70,27 @@
                         <p class="label-field">
                             <strong>3.</strong>Exact Job title-formle
                         </p>
-                        <input type="text" class="form-control  disableinp" class="form-control" disabled="disable" placeholder="E.g Gameplayer Programmer">
+
+                        <div class="wrap-validation">
+                            <div class="check-val error">
+                                <input type="text" class="form-control  disableinp" class="form-control" disabled="disable" placeholder="E.g Gameplayer Programmer">
+                                <span for="SalaryRecordProfessionId" generated="true" class="error">This field is required.</span>
+                            </div>
+                        </div>
                     </div>
                 </div><!-- / .half .in-left -->
                 <div class="half in-right">
                     <div class="box-field">
                         <span class="label-field"><strong>4.</strong>Your Job Type</span>
                         <div class="wrap-validation">
-                            <select class="selectpicker select2">
-                                <option value="">Please select</option>
-                                <option value="2">Contract</option>
-                                <option value="3">Part Time</option>
-                                <option value="1">Permanent</option>
-                             </select>
+                            <div class="check-val">
+                                <select class="selectpicker select2">
+                                    <option value="">Please select</option>
+                                    <option value="2">Contract</option>
+                                    <option value="3">Part Time</option>
+                                    <option value="1">Permanent</option>
+                                 </select>
+                             </div>
                         </div>
                      </div>
                 </div><!-- / .half .in-right -->
@@ -89,12 +100,14 @@
                     <div class="box-field">
                         <span class="label-field"><strong>5.</strong>Your Country of Employmente</span>
                         <div class="wrap-validation">
-                            <select class="selectpicker select2">
-                                <option value="">Please select</option>
-                                <option value="2">Contract</option>
-                                <option value="3">Part Time</option>
-                                <option value="1">Permanent</option>
-                             </select>
+                             <div class="check-val">
+                                <select class="selectpicker select2">
+                                    <option value="">Please select</option>
+                                    <option value="2">Contract</option>
+                                    <option value="3">Part Time</option>
+                                    <option value="1">Permanent</option>
+                                 </select>
+                             </div>
                         </div>
                      </div>
                 </div><!-- / .in-full -->
@@ -104,7 +117,11 @@
                         <span class="label-field">
                             <strong>6.</strong>Your City of Employment
                         </span>
-                        <input class="form-control" placeholder="Enter city and select from list">
+                        <div class="wrap-validation">
+                            <div class="check-val">
+                                <input class="form-control" placeholder="Enter city and select from list">
+                            </div>
+                        </div>
                     </div>
                 </div><!-- / .in-full -->
             </div><!-- Form-wrapper -->
@@ -157,16 +174,18 @@
                     <div class="box-field">
                         <span class="label-field"><strong>9.</strong> Your Salary Currency</span>
                         <div class="wrap-validation">
-                           <select class="selectpicker select2">
-                                <option>Please Select</option>
-                                <option value="PA">Audio And Sound</option>
-                                <option value="CT">Option 3</option>
-                                <option value="NY">Option 4</option>
-                                <option value="MD">Option 5</option>
-                                <option value="VA">Option 6</option>
-                                <option value="VA">Option 7</option>
-                                <option value="VA">Option 8</option>
-                            </select>   
+                           <div class="check-val">
+                               <select class="selectpicker select2">
+                                    <option>Please Select</option>
+                                    <option value="PA">Audio And Sound</option>
+                                    <option value="CT">Option 3</option>
+                                    <option value="NY">Option 4</option>
+                                    <option value="MD">Option 5</option>
+                                    <option value="VA">Option 6</option>
+                                    <option value="VA">Option 7</option>
+                                    <option value="VA">Option 8</option>
+                                </select> 
+                            </div>  
                         </div>
                     </div>
                 </div><!-- //half in-left -->
@@ -177,21 +196,23 @@
                             <strong>10.</strong>Your Additional Benefits
                         </span>
                         <div class="wrap-validation">
-                            <select class="selectpicker select2">
-                                <option>Nothing Selected</option>
-                                <option value="22">I do not receive additional benefits</option>
-                                <option value="4">Childcare</option>
-                                <option value="1">Company car / car allowance</option>
-                                <option value="5">Company pension scheme</option>
-                                <option value="2">Extra annual leave</option>
-                                <option value="6">Flexible working hours</option>
-                                <option value="7">Free language tuition</option>
-                                <option value="8">Free parking</option>
-                                <option value="9">Gym or health club membership</option>
-                                <option value="10">Laptop / personal computer</option>
-                                <option value="11">Life insurance</option>
-                                <option value="12">Mobile phone</option>
-                            </select>
+                                 <div class="check-val">
+                                <select class="selectpicker select2">
+                                    <option>Nothing Selected</option>
+                                    <option value="22">I do not receive additional benefits</option>
+                                    <option value="4">Childcare</option>
+                                    <option value="1">Company car / car allowance</option>
+                                    <option value="5">Company pension scheme</option>
+                                    <option value="2">Extra annual leave</option>
+                                    <option value="6">Flexible working hours</option>
+                                    <option value="7">Free language tuition</option>
+                                    <option value="8">Free parking</option>
+                                    <option value="9">Gym or health club membership</option>
+                                    <option value="10">Laptop / personal computer</option>
+                                    <option value="11">Life insurance</option>
+                                    <option value="12">Mobile phone</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
                 </div> <!-- //half in-right -->
@@ -210,21 +231,23 @@
                             <strong>11.</strong>Years In This Career
                         </span>
                         <div class="wrap-validation">
-                            <select class="selectpicker select2">
-                                <option value="">Please select</option>
-                                <option value="1">1 year</option>
-                                <option value="2">1 year</option>
-                                <option value="3">2 years</option>
-                                <option value="4">3 years</option>
-                                <option value="5">4 years</option>
-                                <option value="6">5 years</option>
-                                <option value="7">6-8 years</option>
-                                <option value="8">9-10 years</option>
-                                <option value="9">11-15 years</option>
-                                <option value="10">16-20 years</option>
-                                <option value="11">21-30 years</option>
-                                <option value="12">31years + </option>
-                            </select>
+                             <div class="check-val">
+                                <select class="selectpicker select2">
+                                    <option value="">Please select</option>
+                                    <option value="1">1 year</option>
+                                    <option value="2">1 year</option>
+                                    <option value="3">2 years</option>
+                                    <option value="4">3 years</option>
+                                    <option value="5">4 years</option>
+                                    <option value="6">5 years</option>
+                                    <option value="7">6-8 years</option>
+                                    <option value="8">9-10 years</option>
+                                    <option value="9">11-15 years</option>
+                                    <option value="10">16-20 years</option>
+                                    <option value="11">21-30 years</option>
+                                    <option value="12">31years + </option>
+                                </select>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -234,6 +257,7 @@
                             <strong>12.</strong>Highest Level Of Education
                         </span>
                         <div class="wrap-validation">
+                             <div class="check-val">
                             <select class="selectpicker select2">
                                 <option value="">Please select</option>
                                 <option value="1">Completed High School</option>
@@ -242,6 +266,7 @@
                                 <option value="4">Masters (graduate) Degree</option>
                                 <option value="5">PhD / Doctorate (postgraduate)</option>
                             </select>
+                            </div>
                         </div>
                       </div>
                 </div>
@@ -253,6 +278,7 @@
                             <strong>13.</strong> Number of Direct Reports
                         </span>
                         <div class="wrap-validation">
+                             <div class="check-val">
                             <select class="selectpicker select2">
                                 <option value="">Please select</option>
                                 <option value="1">None</option>
@@ -265,6 +291,7 @@
                                 <option value="8">101-250</option>
                                 <option value="9">251+</option>
                             </select>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -274,6 +301,7 @@
                             <strong>14.</strong>Your Employer Type
                         </span>
                         <div class="wrap-validation">
+                             <div class="check-val">
                             <select class="selectpicker select2">
                                 <option value="">Please select</option>
                                 <option value="1">Advertising</option>
@@ -289,6 +317,7 @@
                                 <option value="11">Recruitment</option>
                                 <option value="12">Retail</option>
                             </select>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -300,6 +329,7 @@
                             <strong>15.</strong>Your Employer Size
                         </span>
                         <div class="wrap-validation">
+                             <div class="check-val">
                              <select class="selectpicker select2">
                                 <option value="">Please select</option>
                                 <option value="1">Micro (1-19 Staff)</option>
@@ -307,6 +337,7 @@
                                 <option value="3">Medium (50-249 Staff)</option>
                                 <option value="4">Large (250+ Staff)</option>
                              </select>
+                             </div>
                         </div>
                     </div>
                 </div>
@@ -316,11 +347,13 @@
                             <strong>16.</strong>Your Gender
                         </span>
                         <div class="wrap-validation">
+                             <div class="check-val">
                              <select class="selectpicker select2">
                                 <option value=""> Please select </option>
                                 <option value="1">Male</option>
                                 <option value="2">Female</option>
                              </select>
+                             </div>
                         </div>
                     </div>
                 </div>
@@ -332,6 +365,7 @@
                             <strong>17.</strong> Name Your Price
                         </span>
                         <div class="wrap-validation">
+                             <div class="check-val">
                              <select class="selectpicker select2">
                                 <option value="">Please select</option>
                                 <option value="1">None, I would leave for LESS money</option>
@@ -344,6 +378,7 @@
                                 <option value="8">3000 increase per year</option>
                                 <option value="9">3500 increase per year</option>
                              </select>
+                             </div>
                         </div>
                     </div>
                 </div>

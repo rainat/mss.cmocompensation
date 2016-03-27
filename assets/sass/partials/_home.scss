@@ -4,13 +4,12 @@
 	@include clearfix();
 	color: white;
 	padding: 0 0 8%;
-	position: relative;
-	z-index: 10;
 	background-repeat: no-repeat;
 	background-position: center;
 	@include background-size(cover);
 	background-color: $fourth-color;
 	background-attachment: fixed;
+	position: relative;
 	.hero-thumb{
 		text-align: center;
 		max-width: 530px;
@@ -102,12 +101,14 @@
 	@include clearfix();
 	margin-bottom: 0;
 	text-align: center;
+	position: relative;
+	z-index: 11;
 
 
 	.form-box{
 		background: rgba(229,26,46,0.6);
-		padding: 15px 20px;
-    margin-bottom: 20px;
+		padding: 20px 20px 25px;
+    	margin-bottom: 20px;
 	}
 
 	&.salinputwrap{
@@ -149,7 +150,7 @@
 	}
 
 	.caret{
-		border-top-color: #0088cc;
+		border-top-color: #e51a2e;
 	}
 	.btn-group.bootstrap-select{
 		height: auto;
@@ -163,6 +164,7 @@
 }
 .src-group{
 	margin-bottom: 7px;
+	position: relative;
 	@media screen and (min-width: 62em){
 		width: 33%;
 		@include inline-block();
@@ -195,8 +197,6 @@
 	background-color: $second-color;
 	color: white;
 	@include clearfix();
-	position: relative;
-	z-index: 11;
 	padding-bottom: 10px;
 
 	.desc{
@@ -213,6 +213,8 @@
 		margin: 0 auto;
 		text-align: center;
 		margin-top: -25px;
+		position: relative;
+		z-index: 10;
 		@media screen and (min-width: 48em){
 			float: right;
 			margin-left: 15px;

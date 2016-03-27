@@ -233,6 +233,8 @@ img {
 .bg-fourth-color {
   background-color: #bbbbbb; }
 
+/** FORM
+===================================*/
 /*==== CHECKBOX DAN RADIO ======*/
 .checkbox, .radio {
   font-size: 13px; }
@@ -288,6 +290,55 @@ img {
 
 .custom-radio.checked.focus {
   background-position: -60px -20px; }
+
+/** BOOTSTRAP SELECT CUSTOM
+===================================*/
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+  width: 100%; }
+
+.bootstrap-select .btn-default {
+  background: white;
+  border-radius: 0;
+  height: 48px;
+  padding-right: 25px;
+  width: 100%;
+  border: 1px solid #dddddd;
+  color: #b8b4b4; }
+
+.bootstrap-select.btn-group .dropdown-toggle .caret {
+  border-color: 4px solid #e51a2e; }
+
+.dropup .caret, .navbar-fixed-bottom .dropdown .caret {
+  border-bottom-color: #e51a2e; }
+
+/** VALIDATION
+===================================*/
+.wrap-validation {
+  position: relative; }
+
+.has-error .bootstrap-select .dropdown-toggle,
+.error .bootstrap-select .dropdown-toggle,
+.mainsearch .has-error .bootstrap-select .dropdown-toggle,
+.mainsearch .error .bootstrap-select .dropdown-toggle {
+  border-color: transparent;
+  background-color: #696969; }
+
+.wrap-validation div.check-val.error input {
+  border-color: transparent;
+  background-color: #696969; }
+
+.wrap-validation span.error {
+  color: #a94442;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  bottom: -20px;
+  font-size: 0.8em;
+  font-style: italic; }
+
+.mainsearch .wrap-validation span.error {
+  color: white; }
 
 /** HEADER
 ===================================*/
@@ -581,8 +632,6 @@ img {
 .hero {
   color: white;
   padding: 0 0 8%;
-  position: relative;
-  z-index: 10;
   background-repeat: no-repeat;
   background-position: center;
   -moz-background-size: cover;
@@ -590,7 +639,8 @@ img {
   -webkit-background-size: cover;
   background-size: cover;
   background-color: #bbbbbb;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  position: relative; }
   .hero:before, .hero:after {
     content: " ";
     display: table; }
@@ -666,7 +716,9 @@ img {
 ===================================*/
 .mainsearch {
   margin-bottom: 0;
-  text-align: center; }
+  text-align: center;
+  position: relative;
+  z-index: 11; }
   .mainsearch:before, .mainsearch:after {
     content: " ";
     display: table; }
@@ -674,7 +726,7 @@ img {
     clear: both; }
   .mainsearch .form-box {
     background: rgba(229, 26, 46, 0.6);
-    padding: 15px 20px;
+    padding: 20px 20px 25px;
     margin-bottom: 20px; }
   .mainsearch.salinputwrap {
     padding: 15px 0; }
@@ -701,7 +753,7 @@ img {
     border-radius: 0;
     background-color: white; }
   .mainsearch .caret {
-    border-top-color: #0088cc; }
+    border-top-color: #e51a2e; }
   .mainsearch .btn-group.bootstrap-select {
     height: auto; }
     .mainsearch .btn-group.bootstrap-select:before, .mainsearch .btn-group.bootstrap-select:after {
@@ -714,7 +766,8 @@ img {
     padding-bottom: 16px; }
 
 .src-group {
-  margin-bottom: 7px; }
+  margin-bottom: 7px;
+  position: relative; }
   @media screen and (min-width: 62em) {
     .src-group {
       width: 33%;
@@ -746,8 +799,6 @@ img {
 .section-contribution {
   background-color: #333333;
   color: white;
-  position: relative;
-  z-index: 11;
   padding-bottom: 10px; }
   .section-contribution:before, .section-contribution:after {
     content: " ";
@@ -763,7 +814,9 @@ img {
     max-width: 400px;
     margin: 0 auto;
     text-align: center;
-    margin-top: -25px; }
+    margin-top: -25px;
+    position: relative;
+    z-index: 10; }
     @media screen and (min-width: 48em) {
       .section-contribution figure {
         float: right;

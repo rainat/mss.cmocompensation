@@ -1,3 +1,6 @@
+/** FORM
+===================================*/
+
 /*==== CHECKBOX DAN RADIO ======*/
 .checkbox, .radio{
 	font-size: 13px;
@@ -61,3 +64,59 @@
   background-position: -60px -20px;
 }
 
+
+/** BOOTSTRAP SELECT CUSTOM
+===================================*/
+
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+  width: 100%;
+}
+.bootstrap-select .btn-default{
+    background: white;
+    border-radius: 0;
+    height: 48px;
+    padding-right: 25px;
+    width: 100%;
+    border: 1px solid #dddddd;
+    color: #b8b4b4;
+}
+
+.bootstrap-select.btn-group .dropdown-toggle .caret{
+  border-color: 4px solid #e51a2e;
+}
+.dropup .caret, .navbar-fixed-bottom .dropdown .caret{
+     border-bottom-color: #e51a2e;
+}
+
+/** VALIDATION
+===================================*/
+.wrap-validation{
+    position: relative;
+}
+.has-error .bootstrap-select .dropdown-toggle, 
+.error .bootstrap-select .dropdown-toggle,
+.mainsearch .has-error .bootstrap-select .dropdown-toggle, 
+.mainsearch .error .bootstrap-select .dropdown-toggle
+{
+    border-color: transparent;
+     background-color: #696969;
+}
+
+.wrap-validation div.check-val.error input{
+    border-color: transparent;
+    background-color: #696969;
+}
+
+.wrap-validation span.error{
+    color: #a94442;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    bottom: -20px;
+    font-size: 0.8em;
+    font-style: italic;
+}
+.mainsearch .wrap-validation span.error{
+    color: white;
+}
