@@ -118,7 +118,7 @@ module.exports = function(grunt) {
           },
           index: {
               files: {
-                  './': ['template/pages/index.hbs']
+                  //'./': ['template/pages/index.hbs']
               }
           }
       },

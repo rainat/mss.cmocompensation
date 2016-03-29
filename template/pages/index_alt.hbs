@@ -1,0 +1,187 @@
+<div class="hero" style="background-image: url('assets/img/banner.jpg')">
+    <div class="search-actionbar">
+        <div class="container">
+            <div class="desc"><p>Already Contributed? Then you can...</p>  </div>
+            <div class="btn-wrap">
+                <a href="#" class="btn-square trans">search for jobs</a>
+                <a href="#" class="btn-square trans"> search salaries</a>
+            </div>  
+        </div>
+    </div> <!-- //search-actionbar -->
+    
+    <div class="container">
+        <div class="hero-desc">
+            <h2><span class="primary-color">308</span> real salaries, <span class="primary-color">43</span> live jobs</h2>
+            <div class="content-text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisihenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occae</p></div>
+        </div>
+
+        <div class="mainsearch salinputwrap">
+            <form class="form-horizontal" novalidate="novalidate">
+                <div class="form-box">
+                    <div class="src-group">
+                        <div class="wrap-validation">
+                            <div class="check-val error">
+                                <div class="input select required">
+                                   <select name="data[SalaryRecord][profession_id]" required="required" class="form-control required selectpicker select1 selectpicker" onchange="getprofessionrole();" tabindex="1" id="SalaryRecordProfessionId">
+                                        <option value="">Your specialist area</option>
+                                        <option value="1">Option 1</option>
+                                        <option value="2">Option 2</option>
+                                        <option value="3">Option 3</option>
+                                        <option value="5">Option 4</option>
+                                        <option value="4">Option 5</option>
+                                    </select>
+                                      <span for="SalaryRecordProfessionId" generated="true" class="error">This field is required.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  <!-- //form-group --> 
+                    <div class="src-group">
+                        <div class="wrap-validation">
+                            <div class="check-val">
+                                <select id="SalaryRecordProfessionRoleId" class="form-control selectpicker select1" name="data[SalaryRecord][profession_role_id]" >
+                                    <option value="">Your current role</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                    <option value="5">Option 4</option>
+                                    <option value="4">Option 5</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div><!-- //form-group --> 
+
+                    <div class="src-group">
+                        <div class="wrap-validation">
+                            <div class="check-val error">
+                                <input name="data[SalaryRecord][exact_job_title]" class="form-control"  placeholder=" Your exact job title " required="required" tabindex="3" type="text" id="SalaryRecordExactJobTitle">   
+                                <span for="SalaryRecordProfessionId" generated="true" class="error">This field is required.</span>                     
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /form-box -->
+
+                <div class="src-group-btn">
+                    <input type="submit" class="btn-square trans" value="Next">
+                </div>
+            </form>
+        </div><!-- mainsearch -->
+    </div>
+</div><!-- //Hero -->
+
+<div id="main" role="main" >
+    <div class="section-contribution">
+        <div class="container">
+            <figure><img src="assets/img/box.png" alt=""></figure>
+            <article class="desc">
+                <h2 class="title-md">
+                    <strong class="primary-color">a free</strong> salary exchange website for your industry.
+                </h2>
+                <div class="content-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisihenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occae</p>
+                    <div class="text-right">
+                        <a href="#" class="btn-square trans">contribute</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div><!-- //section-contribution -->
+
+    <section class="emreason">
+        <div class="container">
+            {{#whyus}}
+                <h2 class="title-md">{{{title}}}</h2>
+                <div class="row">
+                    {{~#item}}
+                        <article class="emreason-box col-sm-4">
+                            <a href="#">
+                                <figure><img src="assets/img/{{thumb}}"></figure>
+                                <h3>{{title}}</h3>
+                                <div class="content-text">
+                                    <p>{{desc}}</p>
+                                </div>
+                            </a>
+                        </article> <!-- //emreason-box -->
+                    {{~/item}}
+                </div>
+            {{/whyus}}
+        </div>
+    </section><!-- //emreason -->
+
+    <div class="sshome-table">
+        {{#salaryTable}}
+        <header>
+            <div class="container">
+              <h2 class="title-md">{{{title}}}</h2> 
+            </div> 
+        </header>
+        
+        <div class="container"> 
+            <div class="table-responsive">
+                <table class="table tb-contrib"> 
+                    <tr>
+                        <th>salary</th>
+                        <th>job title</th>
+                        <th>location</th>
+                        <th>Job type</th>
+                        <th>date added</th>
+                        <th style="width: 14%"></th>
+                    </tr>
+                    <tr><td colspan="6" class="td-space-head"></td></tr>
+                    {{~#list}}
+                    <tr>
+                        <td class="{{#is new true}}new{{/is}}">
+                            <span class="tb-salary">{{salary}}</span>
+                        </td>
+                        <td>{{job}}</td>
+                        <td>{{location}}</td>
+                        <td>{{type}}</td>
+                        <td>{{date}}</td>
+                        <td class="action" width="17%"><a href="#" class="btn-tbDetail">{{btn}}</a></td>
+                    </tr>
+                    <tr><td colspan="6" class="td-space"></td></tr>
+                    {{~/list}}
+                </table>
+            </div>
+        {{/salaryTable}}
+
+            <article class="sshome-table-desc">
+                <h2 class="title-md">All salaries are posted anonymously.</h2>
+                <div class="content-text">
+                    <p>XYZ Salary Survey is the only live real-time salary survey for your industy providing accurate, global remuneration data to employees and companies 24/7/365.</p>
+                </div>
+            </article><!-- //sshome-table-desc -->
+        </div>
+    </div> <!-- //sshome-table -->
+
+     <div class="ss-join">
+        <div class="container">
+        {{#signup}}
+            <header>
+                <h2 class="title-md">{{title}}</h2>
+                <div class="content-text">
+                 <p>{{desc}}</p>
+                </div>
+            </header>
+            <div class="form-join row">
+                <form>
+                  <div class="form-group col-md-4">
+                    <input type="text" class="form-control" placeholder="First Name">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <input type="text" class="form-control" placeholder="Last Name">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <input type="email" class="form-control" placeholder="Valid email address">
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="form-groupBtn">
+                      <input type="submit" value="sign up" class="btn-square">
+                  </div>
+                </form>
+            </div><!-- //form-join -->
+        {{/signup}}
+        </div>
+    </div><!-- //ss-join -->
+
+</div> <!-- //MAIN -->
+  
