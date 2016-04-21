@@ -1,7 +1,7 @@
 body{
 	background: $body-bg;
 	font: $font-size $primary-font;
-	line-height: 1.5em;
+	line-height: 1.6em;
 	color: $text-color;
 	font-weight: normal;
 	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
@@ -16,7 +16,7 @@ ul, li{
 #{headings()}{
 	font-weight:normal;
 	line-height:1.3em;	
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'dharma_gothic_light', Source Sans Pro, sans-serif;
 }
 
 *:focus, *:active{
@@ -117,10 +117,18 @@ $spacer:
 .title-md{
 	margin: 0;
 	margin-bottom: 18px;
-	font: 24px 'Source Sans Pro', sans-serif;
-	line-height: 1.2em;
+	font: 31px 'dharma_gothic_light', sans-serif;
+	line-height: 1.1em;
 	font-weight: 300;
 	text-transform: uppercase;
+	@media screen and (min-width: 48em){
+		font-size: 41px;
+	}
+
+	strong{
+		font-family: 'dharma_gothic_bold';
+		color: $sixth-color;
+	}
 }
 
 /** BUTTONS & LINKS
@@ -139,10 +147,8 @@ $spacer:
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 13px;
 	line-height: 1.3em;
-	padding: 15px 30px;
-	@include border-radius(3px);
+	padding: 18px 30px;
 	@include prefixed(transition, all 0.3s ease);
-
 
 	&.trans{
 		background-color: transparent;

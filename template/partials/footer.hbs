@@ -3,7 +3,7 @@
 		<div class="container">
 			<div class="row">
 			{{~#footmenu}}
-				<div class="footMenu-item col-md-4">
+				<div class="footMenu-item col-md-3">
 					<h3 class="title-foot">{{title}}</h3>
 					<ul>
 						{{#list}}
@@ -12,24 +12,25 @@
 					</ul>
 				</div>
 			{{~/footmenu}}
-			<div class="ss-social">
-		        <a href="#" class="fb"><i class="fa fa-facebook"></i></a>
-		        <a href="#" class="tw"><i class="fa fa-twitter"></i></a>
-		        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-		        <a href="#" class="google"><i class="fa fa-google"></i></a>
-			</div>
+				<div class="foo-connect col-md-3">
+					<h3 class="title-foot">Connect</h3>
+					<div class="foo-contact">
+						<p><i class="fa fa-phone"></i>0800 123 456</p>
+						<p><i class="fa fa-envelope"></i><a href="#">info@yourcompany.com</a></p>	
+					</div>
+
+					<div class="foo-social">
+				        <a href="#" class="fb"><i class="fa fa-facebook"></i></a>
+				        <a href="#" class="tw"><i class="fa fa-twitter"></i></a>
+				        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+				        <a href="#" class="google"><i class="fa fa-google"></i></a>
+			        </div>
+				</div>
 			</div>
 		</div>
 	</div><!-- //footMenu -->
 
 	{{#footer}}
-	<div class="footcontact">
-		<div class="container">
-			<p class="phone">{{phone}}</p>
-			<p class="email"><a href="#">info@yourcompany.com</a></p>	
-		</div>
-	</div><!-- //footcontact -->
-
 	<div class="container">
 		<div class="copyright">
             <div class="copyItem">&copy;{{copy}}</div>

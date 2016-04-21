@@ -1,22 +1,14 @@
 <div class="hero" style="background-image: url('assets/img/banner.jpg')">
-    <div class="search-actionbar">
-        <div class="container">
-            <div class="desc"><p>Already Contributed? Then you can...</p>  </div>
-            <div class="btn-wrap">
-                <a href="#" class="btn-square trans">search for jobs</a>
-                <a href="#" class="btn-square trans"> search salaries</a>
-            </div>  
-        </div>
-    </div> <!-- //search-actionbar -->
-    
+
     <div class="container">
         <div class="hero-desc">
-            <h2><span class="primary-color">308</span> real salaries, <span class="primary-color">43</span> live jobs</h2>
+            <h2><span>405</span> real salaries<br><span>33</span> live jobs.</h2>
             <div class="content-text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisihenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occae</p></div>
         </div>
 
         <div class="mainsearch salinputwrap">
             <form class="form-horizontal" novalidate="novalidate">
+                <h3 class="mainsrc-title"><span>compare your salary</span></h3>
                 <div class="form-box">
                     <div class="src-group">
                         <div class="wrap-validation">
@@ -58,33 +50,18 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="src-group-btn">
+                        <input type="submit" class="btn-square" value="Next">
+                    </div>
                 </div><!-- /form-box -->
 
-                <div class="src-group-btn">
-                    <input type="submit" class="btn-square trans" value="Next">
-                </div>
             </form>
         </div><!-- mainsearch -->
     </div>
 </div><!-- //Hero -->
 
 <div id="main" role="main" >
-    <div class="section-contribution">
-        <div class="container">
-            <figure><img src="assets/img/box.png" alt=""></figure>
-            <article class="desc">
-                <h2 class="title-md">
-                    <strong class="primary-color">a free</strong> salary exchange website for your industry.
-                </h2>
-                <div class="content-text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisihenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occae</p>
-                    <div class="text-right">
-                        <a href="#" class="btn-square trans">contribute</a>
-                    </div>
-                </div>
-            </article>
-        </div>
-    </div><!-- //section-contribution -->
 
     <section class="emreason">
         <div class="container">
@@ -94,7 +71,10 @@
                     {{~#item}}
                         <article class="emreason-box col-sm-4">
                             <a href="#">
-                                <figure><img src="assets/img/{{thumb}}"></figure>
+                                <figure>
+                                    <span class="emreason-numb">{{number}}</span>
+                                    <img src="assets/img/{{thumb}}">
+                                </figure>
                                 <h3>{{title}}</h3>
                                 <div class="content-text">
                                     <p>{{desc}}</p>
@@ -106,6 +86,80 @@
             {{/whyus}}
         </div>
     </section><!-- //emreason -->
+
+    <div class="section-contribution">
+        <div class="container">
+            <figure><img src="assets/img/thumb-free.png" alt=""></figure>
+            <article class="desc">
+                <h2 class="title-md">
+                    a free salary exchange website for your industry.
+                </h2>
+                <div class="content-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisihenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occae</p>
+                    <div class="text-right">
+                        <a href="#" class="btn-square trans">contribute</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div><!-- //section-contribution -->
+
+    <section class="contributed">
+        <div class="container">
+            <div class="row">
+                {{#contributed}}
+                    {{#is id 1}} 
+                        <article class="first-col">
+                            <h3>{{title}}</h3>
+                            <div class="desc">
+                                <p>{{desc}}</p>
+                            </div>
+                        </article>
+                    {{else}}
+                        <article {{#is id 1}} class="first-col" {{/is}}>
+                            <h3>{{title}}</h3>
+                            <div class="desc">
+                                <p>{{desc}}</p>
+                            </div>
+                            <div class="btn-wrap">
+                                <a href="#" class="btn-square trans">{{btn}}</a>
+                            </div>
+                        </article>
+                    {{/is}}
+                {{/contributed}}
+            </div>
+        </div>
+    </section><!-- //contributed -->
+
+    <div class="ss-join">
+        <div class="container">
+        {{#signup}}
+            <header>
+                <h2 class="title-md">{{title}}</h2>
+                <div class="content-text">
+                 <p>{{desc}}</p>
+                </div>
+            </header>
+            <div class="form-join row">
+                <form>
+                  <div class="form-group col-md-4">
+                    <input type="text" class="form-control" placeholder="First Name">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <input type="text" class="form-control" placeholder="Last Name">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <input type="email" class="form-control" placeholder="Valid email address">
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="form-groupBtn">
+                      <input type="submit" value="sign up" class="btn-square">
+                  </div>
+                </form>
+            </div><!-- //form-join -->
+        {{/signup}}
+        </div>
+    </div><!-- //ss-join -->
 
     <div class="sshome-table">
         {{#salaryTable}}
@@ -152,36 +206,6 @@
             </article><!-- //sshome-table-desc -->
         </div>
     </div> <!-- //sshome-table -->
-
-     <div class="ss-join">
-        <div class="container">
-        {{#signup}}
-            <header>
-                <h2 class="title-md">{{title}}</h2>
-                <div class="content-text">
-                 <p>{{desc}}</p>
-                </div>
-            </header>
-            <div class="form-join row">
-                <form>
-                  <div class="form-group col-md-4">
-                    <input type="text" class="form-control" placeholder="First Name">
-                  </div>
-                  <div class="form-group col-md-4">
-                    <input type="text" class="form-control" placeholder="Last Name">
-                  </div>
-                  <div class="form-group col-md-4">
-                    <input type="email" class="form-control" placeholder="Valid email address">
-                  </div>
-                  <div class="clearfix"></div>
-                  <div class="form-groupBtn">
-                      <input type="submit" value="sign up" class="btn-square">
-                  </div>
-                </form>
-            </div><!-- //form-join -->
-        {{/signup}}
-        </div>
-    </div><!-- //ss-join -->
 
 </div> <!-- //MAIN -->
   

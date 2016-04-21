@@ -37,7 +37,7 @@
         <!-- //Responsive nav Space -->
         <div class="wrapper">
             <div class="wrapper-inner">
-                <header id="header" class="bg-darken">
+                <header id="header" class="bg-header">
                     <div class="container">
                         <div class="header-action">
                             <div id="logintopbtn" class="dashboardcookie">
@@ -49,8 +49,9 @@
                             <div class="logo">
                                 <a href="#">
                                     <figure class="logo-thumb">
-                                        <img src="assets/img/logo_white.png" alt="">
+                                        <img src="assets/img/logo_white.png" alt="" width="80">
                                     </figure>
+                                    <h2>Your Survey Name</h2>
                                 </a>
                             </div>
                             <!-- //logo -->
@@ -64,27 +65,16 @@
                 </header>
                 <!-- HEADER -->
                 <div class="hero" style="background-image: url('assets/img/banner.jpg')">
-                    <div class="search-actionbar">
-                        <div class="container">
-                            <div class="desc">
-                                <p>Already Contributed? Then you can...</p>
-                            </div>
-                            <div class="btn-wrap">
-                                <a href="#" class="btn-square trans">search for jobs</a>
-                                <a href="#" class="btn-square trans"> search salaries</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- //search-actionbar -->
                     <div class="container">
                         <div class="hero-desc">
-                            <h2><span class="primary-color">308</span> real salaries, <span class="primary-color">43</span> live jobs</h2>
+                            <h2><span>405</span> real salaries<br><span>33</span> live jobs.</h2>
                             <div class="content-text">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisihenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occae</p>
                             </div>
                         </div>
                         <div class="mainsearch salinputwrap">
                             <form class="form-horizontal" novalidate="novalidate">
+                                <h3 class="mainsrc-title"><span>compare your salary</span></h3>
                                 <div class="form-box">
                                     <div class="src-group">
                                         <div class="wrap-validation">
@@ -127,11 +117,11 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="src-group-btn">
+                                        <input type="submit" class="btn-square" value="Next">
+                                    </div>
                                 </div>
                                 <!-- /form-box -->
-                                <div class="src-group-btn">
-                                    <input type="submit" class="btn-square trans" value="Next">
-                                </div>
                             </form>
                         </div>
                         <!-- mainsearch -->
@@ -139,30 +129,16 @@
                 </div>
                 <!-- //Hero -->
                 <div id="main" role="main">
-                    <div class="section-contribution">
-                        <div class="container">
-                            <figure><img src="assets/img/box.png" alt=""></figure>
-                            <article class="desc">
-                                <h2 class="title-md">
-                    <strong class="primary-color">a free</strong> salary exchange website for your industry.
-                </h2>
-                                <div class="content-text">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisihenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occae</p>
-                                    <div class="text-right">
-                                        <a href="#" class="btn-square trans">contribute</a>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-                    <!-- //section-contribution -->
                     <section class="emreason">
                         <div class="container">
-                            <h2 class="title-md">the <strong>top 3 reasons</strong> employees & companies use our salary survey</h2>
+                            <h2 class="title-md"><strong>Top 3</strong> reasons employees and companies use our Salary Survey</h2>
                             <div class="row">
                                 <article class="emreason-box col-sm-4">
                                     <a href="#">
-                                        <figure><img src="assets/img/icon1.png"></figure>
+                                        <figure>
+                                            <span class="emreason-numb">1</span>
+                                            <img src="assets/img/icon1.png">
+                                        </figure>
                                         <h3>Salary Benchmarking.</h3>
                                         <div class="content-text">
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
@@ -172,7 +148,10 @@
                                 <!-- //emreason-box -->
                                 <article class="emreason-box col-sm-4">
                                     <a href="#">
-                                        <figure><img src="assets/img/icon2.png"></figure>
+                                        <figure>
+                                            <span class="emreason-numb">2</span>
+                                            <img src="assets/img/icon2.png">
+                                        </figure>
                                         <h3>Pay Review Preperation.</h3>
                                         <div class="content-text">
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
@@ -182,7 +161,10 @@
                                 <!-- //emreason-box -->
                                 <article class="emreason-box col-sm-4">
                                     <a href="#">
-                                        <figure><img src="assets/img/icon3.png"></figure>
+                                        <figure>
+                                            <span class="emreason-numb">3</span>
+                                            <img src="assets/img/icon3.png">
+                                        </figure>
                                         <h3>Salary Benchmarking.</h3>
                                         <div class="content-text">
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
@@ -194,10 +176,87 @@
                         </div>
                     </section>
                     <!-- //emreason -->
+                    <div class="section-contribution">
+                        <div class="container">
+                            <figure><img src="assets/img/thumb-free.png" alt=""></figure>
+                            <article class="desc">
+                                <h2 class="title-md">
+                    a free salary exchange website for your industry.
+                </h2>
+                                <div class="content-text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisihenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occae</p>
+                                    <div class="text-right">
+                                        <a href="#" class="btn-square trans">contribute</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <!-- //section-contribution -->
+                    <section class="contributed">
+                        <div class="container">
+                            <div class="row">
+                                <article class="first-col">
+                                    <h3>Already Contributed?</h3>
+                                    <div class="desc">
+                                        <p>If you have already contributed salary data in the last 12 months, please go directly to our search pages.</p>
+                                    </div>
+                                </article>
+                                <article>
+                                    <h3>Search Jobs</h3>
+                                    <div class="desc">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincidi</p>
+                                    </div>
+                                    <div class="btn-wrap">
+                                        <a href="#" class="btn-square trans">search jobs</a>
+                                    </div>
+                                </article>
+                                <article>
+                                    <h3>Search Salaries</h3>
+                                    <div class="desc">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincidi</p>
+                                    </div>
+                                    <div class="btn-wrap">
+                                        <a href="#" class="btn-square trans">search salaries</a>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- //contributed -->
+                    <div class="ss-join">
+                        <div class="container">
+                            <header>
+                                <h2 class="title-md">Did you know?</h2>
+                                <div class="content-text">
+                                    <p>We can send you free salary alerts by email when new salaries are entered that match your profile. Join us today to take advantage.</p>
+                                </div>
+                            </header>
+                            <div class="form-join row">
+                                <form>
+                                    <div class="form-group col-md-4">
+                                        <input type="text" class="form-control" placeholder="First Name">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <input type="text" class="form-control" placeholder="Last Name">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <input type="email" class="form-control" placeholder="Valid email address">
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div class="form-groupBtn">
+                                        <input type="submit" value="sign up" class="btn-square">
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- //form-join -->
+                        </div>
+                    </div>
+                    <!-- //ss-join -->
                     <div class="sshome-table">
                         <header>
                             <div class="container">
-                                <h2 class="title-md">Last <strong>5</strong> Salary Contributions</h2>
+                                <h2 class="title-md">Last 5 Salary Contributions</h2>
                             </div>
                         </header>
                         <div class="container">
@@ -291,42 +350,13 @@
                         </div>
                     </div>
                     <!-- //sshome-table -->
-                    <div class="ss-join">
-                        <div class="container">
-                            <header>
-                                <h2 class="title-md">Did you know?</h2>
-                                <div class="content-text">
-                                    <p>We can send you free salary alerts by email when new salaries are entered that match your profile. Join us today to take advantage.</p>
-                                </div>
-                            </header>
-                            <div class="form-join row">
-                                <form>
-                                    <div class="form-group col-md-4">
-                                        <input type="text" class="form-control" placeholder="First Name">
-                                    </div>
-                                    <div class="form-group col-md-4">
-                                        <input type="text" class="form-control" placeholder="Last Name">
-                                    </div>
-                                    <div class="form-group col-md-4">
-                                        <input type="email" class="form-control" placeholder="Valid email address">
-                                    </div>
-                                    <div class="clearfix"></div>
-                                    <div class="form-groupBtn">
-                                        <input type="submit" value="sign up" class="btn-square">
-                                    </div>
-                                </form>
-                            </div>
-                            <!-- //form-join -->
-                        </div>
-                    </div>
-                    <!-- //ss-join -->
                 </div>
                 <!-- //MAIN -->
                 <footer id="footer">
                     <div class="footMenu">
                         <div class="container">
                             <div class="row">
-                                <div class="footMenu-item col-md-4">
+                                <div class="footMenu-item col-md-3">
                                     <h3 class="title-foot">employees</h3>
                                     <ul>
                                         <li><a href="#">Add your Salary</a></li>
@@ -336,7 +366,7 @@
                                         <li><a href="#"> FAQs</a></li>
                                     </ul>
                                 </div>
-                                <div class="footMenu-item col-md-4">
+                                <div class="footMenu-item col-md-3">
                                     <h3 class="title-foot">companies</h3>
                                     <ul>
                                         <li><a href="#">About Us</a></li>
@@ -346,7 +376,7 @@
                                         <li><a href="#"> FAQs</a></li>
                                     </ul>
                                 </div>
-                                <div class="footMenu-item col-md-4">
+                                <div class="footMenu-item col-md-3">
                                     <h3 class="title-foot">legal</h3>
                                     <ul>
                                         <li><a href="#">Privacy Policy</a></li>
@@ -355,23 +385,23 @@
                                         <li><a href="#">Site Map</a></li>
                                     </ul>
                                 </div>
-                                <div class="ss-social">
-                                    <a href="#" class="fb"><i class="fa fa-facebook"></i></a>
-                                    <a href="#" class="tw"><i class="fa fa-twitter"></i></a>
-                                    <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-                                    <a href="#" class="google"><i class="fa fa-google"></i></a>
+                                <div class="foo-connect col-md-3">
+                                    <h3 class="title-foot">Connect</h3>
+                                    <div class="foo-contact">
+                                        <p><i class="fa fa-phone"></i>0800 123 456</p>
+                                        <p><i class="fa fa-envelope"></i><a href="#">info@yourcompany.com</a></p>
+                                    </div>
+                                    <div class="foo-social">
+                                        <a href="#" class="fb"><i class="fa fa-facebook"></i></a>
+                                        <a href="#" class="tw"><i class="fa fa-twitter"></i></a>
+                                        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                                        <a href="#" class="google"><i class="fa fa-google"></i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- //footMenu -->
-                    <div class="footcontact">
-                        <div class="container">
-                            <p class="phone">Call us today on 0800 123 456</p>
-                            <p class="email"><a href="#">info@yourcompany.com</a></p>
-                        </div>
-                    </div>
-                    <!-- //footcontact -->
                     <div class="container">
                         <div class="copyright">
                             <div class="copyItem">&copy;Your company Salary Survey. All rights reserved.</div>

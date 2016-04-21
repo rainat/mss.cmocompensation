@@ -102,7 +102,7 @@
 		height: 0;
 		border-style: solid;
 		border-width: 21px 21px 0 0;
-		border-color: #e51a2e transparent transparent transparent;
+		border-color: $primary-color transparent transparent transparent;
     }
 }
 
@@ -140,7 +140,7 @@
 	    margin-top: 6px;
 
 	    strong{
-	        color: $third-color;
+	        color: $primary-color;
     		margin-right: 9px;
     		@include inline-block();
 		}
