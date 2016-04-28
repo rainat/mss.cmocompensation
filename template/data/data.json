@@ -3,22 +3,19 @@
 			"checkout-b", "checkout", "checkout-c-1", "checkout-c-3", "checkout-e-1", "checkout-e-2"
 	], 
 	"whyus" :{
- 		"title" : "<strong>Top 3</strong> reasons employees and companies use our Salary Survey",
+ 		"title" : "the <strong>top 3 reasons</strong> employees & companies use our salary survey",
  		"item" :[
  			{
- 				"number": 1,
  				"thumb" : "icon1.png",
  				"title" : "Salary Benchmarking.",
  				"desc" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore."
  			},
  			{
- 				"number": 2,
  				"thumb" : "icon2.png",
  				"title" : "Pay Review Preperation.",
  				"desc" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit."
  			},
  			{
- 				"number": 3,
  				"thumb" : "icon3.png",
  				"title" : "Salary Benchmarking.",
  				"desc" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
@@ -26,7 +23,7 @@
  		]
  	},
  	"salaryTable" :{
- 		"title" : "Last 5 Salary Contributions",
+ 		"title" : "Last <strong>5</strong> Salary Contributions",
  		"list" : [
  			{
  				"new" : true,
@@ -71,24 +68,6 @@
  		"title" : "Did you know?",
  		"desc" : "We can send you free salary alerts by email when new salaries are entered that match your profile. Join us today to take advantage."
  	},
-
- 	"contributed":[
- 		{
- 			"id" : 1,
- 			"title" : "Already Contributed?",
- 			"desc":"If you have already contributed salary data in the last 12 months, please go directly to our search pages."
- 		},
- 		{
- 			"title" : "Search Jobs",
- 			"desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincidi",
- 			"btn":"search jobs"
- 		},
- 		{
- 			"title" : "Search Salaries",
- 			"desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincidi",
- 			"btn":"search salaries"
- 		}
- 	],
 
  	"footmenu" :[
  		{

@@ -58,11 +58,7 @@ module.exports = function(grunt) {
 
       concat: {
           libs: {
-              src: ['assets/js/libs/{,*/}*.js', 
-              'bower_components/jquery/dist/jquery.min.js', 
-              'bower_components/jquery-ui/ui/core.js', 
-              'bower_components/jquery-ui/ui/effect.js', 
-              'bower_components/jquery-ui/ui/effect-bounce.js'],
+              src: ['assets/js/libs/{,*/}*.js', 'bower_components/jquery/dist/jquery.min.js', 'bower_components/jquery-ui/ui/core.js', 'bower_components/jquery-ui/ui/effect.js', 'bower_components/jquery-ui/ui/effect-bounce.js'],
               dest: 'assets/js/libs.js'
           },
           vendor: {

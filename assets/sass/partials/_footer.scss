@@ -1,15 +1,15 @@
 /** FOOTER
 ===================================*/
 #footer{
-	background-color: white;
+	padding-bottom: 40px;
+	background-color: $second-color;
 	color: #a6a6a6;
 }
 
 .footMenu{
 	position: relative;
-	background-color: $color-dark-grey;
+	background-color: #e51a2e;
 	color: white;
-	padding: 50px 0;
 	@media screen and (min-width: 48em){
 		margin-bottom: 0;
 	}
@@ -21,6 +21,24 @@
 .footMenu-item{
 	text-align: center;
 	color: #858585;
+	font-size: 0.9em;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	@media screen and (min-width: 48em){
+		width: 30%;
+	}
+
+	.title-foot{
+		font-weight: $font-bold;
+		font-size: 14px;
+		color: $third-color;
+		text-transform: uppercase;
+		margin: 0;
+		padding: 13px;
+		margin-bottom: 20px;
+		background: $fourth-color;
+	}
+
 	ul{
 		li{
 			a{
@@ -45,68 +63,31 @@
 	@media screen and (max-width: 32em){
 		display: block;
 		width: 100%;
-		border-bottom  : 1px solid #2D2A2A;
+		border-bottom  : 1px solid #cecece;
 		padding-top: 0px;
+	padding-bottom: 0px;
 	}
 }
 
-.title-foot{
-		font-size: 28px;
-		color: lighten($color-dark-grey, 20%);
-		text-transform: uppercase;
-		margin: 0;
-		margin-bottom: 20px;
-		background: $fourth-color;
-		@media screen and (min-width: 62em){
-			text-align: center;
+.footcontact{
+	text-align: center;
+	padding: 30px 0 10px;
+	@media screen and (min-width: 48em){
+		.phone{
+			float: left;
+			margin-bottom: 0;
+		}
+		.email{
+			float: right;
+			margin-bottom: 0;
 		}
 	}
 
-.foo-connect{
-
-}
-.foo-contact{
-	margin-bottom: 25px;
-	.fa{
-		@include square(32px);
-		border: 3px solid lighten($color-dark-grey, 60%);
-		@include border-radius(100%);
-		text-align: center;
-		vertical-align: middle;
-		font-size: 15px;
-    	line-height: 25px;
-    	color: lighten($color-dark-grey, 60%);
-    	margin-right: 10px;
-	}
 	a{
-		color: $primary-color;
-	}
-}
-
-.foo-social{
-	a{
-		@include inline-block();
-		margin: 0 5px;
-		@include square(38px);
-		background-color: #4f6cbd;
-		color: white;
-		font-size: 18px;
-		line-height: 2em;
-		text-align: center;
-		@include border-radius(100%);
-		&:first-child{
-			margin-left: 0;
-		}
-		&.tw{background-color: #2e97e9}
-		&.linkedin{background-color:#d9422c }
-		&.google{background-color: #3b6ea2}
-		.fa{
-			&:before{
-				@include inline-block();
-			}
-		}
+		color: #a6a6a6;
 		&:hover{
-			background-color: $primary-color;
+			color: white;
+			text-decoration: none;
 		}
 	}
 }
@@ -116,7 +97,6 @@
 	overflow: hidden;
 	text-align: center;
 	font-size: 0.8em;
-	text-transform: uppercase;
 	@media screen and (min-width: 38em){
 		text-align: left;
 	}

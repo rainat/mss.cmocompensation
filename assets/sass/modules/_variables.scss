@@ -6,32 +6,25 @@
 // Colors
 //...............
 
-$color-blue-fountain	    : #4fbac4;
-$color-blue-sky	    		: #79dfe8;
-$color-blue-chill   		: #11759f;
-$color-dark-grey			: #363636;
-$color-atoll				: #bbbbbb;
-$color-blue-anakiwa			: #95f6ff;
-$color-lt-grey				: #a6a6a6;
+$color-red				: #e51a2e;
+$color-dark-grey		: #333333;
+$color-black			: #000000;
+$color-light-grey		: #bbbbbb;
 
-
-$primary-color:          $color-blue-fountain;
-$second-color:           $color-blue-sky;
-$third-color:            $color-blue-chill;
-$fourth-color:           $color-dark-grey;
-$fifth-color:            $color-atoll;
-$sixth-color:            $color-blue-anakiwa;
-$seventh-color:          $color-lt-grey;
+$primary-color:          $color-red;
+$second-color:           $color-dark-grey;
+$third-color:            $color-black;
+$fourth-color:           $color-light-grey;
 
 $body-bg:                #fff;
 $text-color:             #1d1b1b;
 
 // Fonts
 //...............
-$primary-font:           'Open Sans', Helvetica, Arial, sans-serif;
+$primary-font:           "Open Sans", Helvetica, Arial, sans-serif;
 $title-font: 			 'Source Sans Pro', sans-serif;
 $secondary-font:         "Arvo", Georgia, Times, serif;
-$font-size:              14px;
+$font-size:              13px;
 
 //fonts-type
 $font_thin:'';

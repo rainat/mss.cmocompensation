@@ -1,6 +1,7 @@
 
-{{#is basename 'index_alt'}}
-	<header id="header" class="bg-header">
+
+{{#isnt basename 'index_'}}
+	<header id="header" class="bg-darken">
 		<div class="container">
 			<div class="header-action">
 				<div id="logintopbtn" class="dashboardcookie"> 
@@ -12,9 +13,8 @@
 			 	<div class="logo">
 			 		<a href="#">
 				 		<figure class="logo-thumb">
-				 			<img src="assets/img/logo_white.png" alt="" width="80">
+				 			<img src="assets/img/logo_white.png" alt="">
 				 		</figure>
-				 		<h2>Your Survey Name</h2>
 			 		</a>
 			 	</div><!-- //logo -->
 			 	<div class="banner-ads-sub">
@@ -25,19 +25,16 @@
 			</div>
 		</div>
 	</header> <!-- HEADER -->  
-{{/is}}
+{{else}}
 
-{{#is basename 'index_'}}
-
-	<header id="header">
+	<header id="header" class="bg-darken">
 		<div class="container">
 			<div class="row">
 			 	<div class="logo">
 			 		<a href="#">
 				 		<figure class="logo-thumb">
-				 			<img src="assets/img/logo_white.png" alt="" width="80">
+				 			<img src="assets/img/logo_white.png" alt="">
 				 		</figure>
-				 		<h2>Your Survey Name</h2>
 			 		</a>
 			 	</div><!-- //logo -->
 			 	<div class="banner-ads">
@@ -45,39 +42,10 @@
 			 	</div>
 				<div class="head-right">
 					<a href="#" class="btn-square trans">sign up</a>
-					<a href="#" class="btn-square trans">login</a>
+					<a href="#" class="btn-square second">login</a>
 				</div>
 			</div>
 		</div>
 	</header> <!-- HEADER -->  
 
-{{/is}}
-
-{{#is basename 'add_salary'}}
-		<header id="header" class="no-fixed">
-			<div class="container">
-				<div class="header-action">
-					<div id="logintopbtn" class="dashboardcookie"> 
-		               <a href="/SalsurveyUsers/login" class="btn-square second">login</a>                
-		            </div><!-- //logintopbtn -->
-	            </div>
-
-				<div class="row">
-				 	<div class="logo">
-				 		<a href="#">
-					 		<figure class="logo-thumb">
-					 			<img src="assets/img/logo_white.png" alt="" width="80">
-					 		</figure>
-					 		<h2>Your Survey Name</h2>
-				 		</a>
-				 	</div><!-- //logo -->
-				 	<div class="banner-ads-sub">
-				 		<a href="#">
-				 			<img src="http://placehold.it/468x60">
-				 		</a>
-				 	</div>
-				</div>
-			</div>
-		</header> <!-- HEADER -->  
-{{/is}}
-
+{{/isnt}}

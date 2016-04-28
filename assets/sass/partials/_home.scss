@@ -21,11 +21,7 @@
 		}
 	}
 	@media screen and (min-width: 48em){
-		//padding: 8% 0 4%;
-		padding: 145px 0 70px;
-	}
-	@media screen and (min-width: 62em){
-		@include min-height(700px);
+		padding: 8% 0 4%;
 	}
 }
 
@@ -90,11 +86,7 @@
 		line-height: 1em;
 		text-transform: uppercase;
 		@media screen and (min-width: 48em){
-			font-size: 90px;
-			line-height: 0.85em;
-		}
-		span{
-			color: lighten($third-color, 20%);
+			font-size: 58px;
 		}
 	}
 	.content-text{
@@ -114,7 +106,7 @@
 
 
 	.form-box{
-		background: rgba($third-color, 0.8);
+		background: rgba(229,26,46,0.6);
 		padding: 20px 20px 25px;
     	margin-bottom: 20px;
 	}
@@ -158,7 +150,7 @@
 	}
 
 	.caret{
-		border-top-color: $primary-color;
+		border-top-color: #e51a2e;
 	}
 	.btn-group.bootstrap-select{
 		height: auto;
@@ -169,28 +161,12 @@
 		padding-top: 16px;
 		padding-bottom: 16px;
 	}
-
-	.mainsrc-title{
-		text-align: left;
-		margin: 0;
-		font-family: 'Open Sans', Helvetica, Arial;
-		font-weight: 700;
-		font-size: 14px;
-		text-transform: uppercase;
-		span{
-			@include inline-block();
-			padding: 12px 20px 13px;
-			background-color: rgba($third-color, 0.8);
-			color: white;
-		}
-		
-	}
 }
 .src-group{
-	margin-bottom: 27px;
+	margin-bottom: 7px;
 	position: relative;
 	@media screen and (min-width: 62em){
-		width: 29%;
+		width: 33%;
 		@include inline-block();
 		margin-bottom: 0;
 		padding: 0 8px;
@@ -207,11 +183,10 @@
 }
 .src-group-btn{
 	text-align: center;
-	@include inline-block();
-	margin-top: 20px;
+	margin-bottom: 7px;
 	@media screen and (min-width: 62em){
+		margin-bottom: 0;
 		text-align: right;	
-		margin-top: 0;
 	}
 }
 
@@ -219,59 +194,35 @@
 /** CONTRIBUTION
 ===================================*/
 .section-contribution{
-	background-color: $third-color;
+	background-color: $second-color;
 	color: white;
 	@include clearfix();
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-bottom: 10px;
 
 	.desc{
 		overflow: hidden;
+		padding: 35px 0;
+
 		.btn-square{
 			margin-top: 20px;
 		}
 	}
 
 	figure{
-		//max-width: 370px;
+		max-width: 400px;
 		margin: 0 auto;
 		text-align: center;
+		margin-top: -25px;
 		position: relative;
 		z-index: 10;
-		@include make-sm-column(6);
-		margin-bottom: 30px;
 		@media screen and (min-width: 48em){
-			margin-right: 15px;
-			text-align: left;
-		}
-	}
-}
-
-/** CONTTIBUTED
-===================================*/
-.contributed{
-	background-color: $fourth-color;
-	    padding: 30px 0 48px;
-	article{
-		@include make-sm-column(4);
-		color: white;
-		h3{
-			margin-bottom: 0;
-			margin-bottom: 10px;
-			font-size: 28px;
-			color: $primary-color;
-		}
-
-		.btn-wrap{
-			overflow: hidden;
+			float: right;
+			margin-left: 15px;
 			text-align: right;
 		}
-		.btn-square{
-			margin-top: 20px;
-		}
 	}
-	
 }
+
 
 /** EMPLOYEE REASON
 ===================================*/
@@ -311,33 +262,19 @@
 		padding: 10px;
 	}
 	figure{
-		position: relative;
-		@include square(138px);
-		@include clearfix();
+		max-width: 145px;
+		overflow: hidden;
 		margin: 0 auto 25px;
 		@include border-radius(100%);
-		border: 7px solid $sixth-color;
+		border: 7px solid white;
 		text-align: center;
 		padding: 30px;
-		.emreason-numb{
-			position: absolute;
-			left: -30px;
-			top: -6px;
-			@include square(32px);
-			@include inline-block();
-			@include border-radius(100px);
-			background-color: $primary-color;
-			border: 2px solid white;
-			font-size: 19px;
-			line-height: 26px;
-		}
-
 	}
 
 	h3{
-		font-size: 28px;
+		font-size: 19px;
 		margin: 0;
-		margin-bottom: 15px;
+		margin-bottom: 25px;
 		text-align: center;
 	}
 
@@ -349,10 +286,10 @@
 /**  HOME TABLE
 ===================================*/
 .sshome-table{
-	padding: 50px 0	;
+	padding-bottom: 50px;
 	position: relative;
 	z-index: 12;
-	background-color: $primary-color;
+	background-color: #fafafa;
 	@media screen and (min-width: 62em){
 		padding-bottom: 70px;
 	}
@@ -361,13 +298,13 @@
 	}
 
 	header{
+		background-color: $second-color;
 		color: white;
+		padding: 20px 0;
 		margin-bottom: 13px;	
 		.title-md{
 			color: white;
 			margin-bottom: 0;
-			font-size: 28px;
-			margin-bottom: 25px;
 		}
 	}
 
@@ -378,14 +315,27 @@
 
 .table{
 	&.tb-contrib{
+		&:before{
+			display: none;
+			content: '';
+			position: absolute;
+			z-index: -1;
+			left: 0;
+			top: 0;
+			@include size(100%, 130px);
+			background-color: $fourth-color;
+			@media screen and (min-width: 48em){
+				display: block;	
+			}
+
+		}
 		th{
-			background-color: darken($primary-color, 10%);
+			background-color: $fourth-color;
 			border: none;
 			text-transform: uppercase;
-			padding: 18px 14px;
-			font-size: 0.9em;
-			border-left: 1px solid $primary-color;
-			color: white;
+			padding: 8px 15px;
+			font-size: 0.8em;
+			border-left: 1px solid $text-color;
 
 			&:first-child, &:last-child {
 				border-left: none;
@@ -395,25 +345,22 @@
 		td{
 			background-color: white;
 			border: none;
-			padding: 10px 13px;
-			color: #6e6e6e;
-			font-size: 19px;
-			font-family: 'dharma_gothic_light';
-			border-left: 1px solid #e0e1e1;
+			padding: 8px 10px;
+			color: $text-color;
+			font-size: 0.9em;
+			border: 1px solid #e0e1e1;
 			position: relative;
 			vertical-align: middle;
 			font-weight: $font_smbold;
-
 			
 			&.td-space-head{
 				border: none !important;
-				padding: 15px 0;
 				&:first-child{
 					background-color: transparent;
 				}
 				@media screen and (min-width: 48em){
 					background-color: transparent;
-					
+					padding: 30px 6px;
 				}	
 			}
 			&.td-space{
@@ -426,7 +373,7 @@
 			}
 
 			&:first-child{
-				color: $third-color;
+				color: $primary-color;
 			}
 			&:last-child{
 				border-left: none;
@@ -448,20 +395,19 @@
 			}
 
 			&.action{
-				border-left: none;
-				
+				background-color: $primary-color;
+				color: white;
 			}
 
 			.btn-tbDetail{
-				background-color: $third-color;
+				background-color: $primary-color;
 				color: white;
-				font-size: 0.6em;
+				font-size: 0.8em;
 				display: block;
 				color: white;
 				text-align: center;
 				font-weight: $font-bold;
 				text-transform: uppercase;
-				font-family: 'Open Sans', sans-serif;
 				padding: 15px 10px;
 
 				&:hover{
@@ -476,10 +422,9 @@
 .sshome-table-desc{
 	text-align: center;
 	padding-top: 30px;
-	color: white;
+	color: #a6a6a6;
 	.title-md{
-		font-size: 28px;
-		margin-bottom: 25px;
+		color: $second-color;
 	}
 }
 
@@ -488,8 +433,10 @@
 ===================================*/
 .ss-join{
 	padding: 50px 0;
+	background-color: $second-color;
+	color: #a6a6a6;
 	.title-md{
-		
+		color:  white;
 	}
 	.container{
 		position: relative;
@@ -497,7 +444,6 @@
 	header{
 		margin-bottom: 30px;
 		text-align: center;
-		color: $seventh-color;
 		.title-md{
 			margin-bottom: 25px;
 		}
@@ -506,10 +452,6 @@
 	.form-groupBtn{
 		text-align: center;
 		margin-top: 20px;
-	}
-
-	.btn-square{
-		background-color: $third-color;
 	}
 
 	.form-control{
